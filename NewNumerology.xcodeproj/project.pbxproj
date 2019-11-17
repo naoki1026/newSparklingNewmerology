@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -46,14 +46,8 @@
 		B04677CB22740F4800A1897E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B04677CA22740F4700A1897E /* GoogleService-Info.plist */; };
 		B04677D22274216A00A1897E /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04677D02274216A00A1897E /* ForgotPasswordVC.swift */; };
 		B04677D32274216A00A1897E /* ForgotPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B04677D12274216A00A1897E /* ForgotPasswordViewController.xib */; };
-		B050ED9C2278E25E005C8EE2 /* MessageMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B050ED9B2278E25E005C8EE2 /* MessageMainVC.swift */; };
-		B050ED9E2278F1E8005C8EE2 /* AddChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B050ED9D2278F1E8005C8EE2 /* AddChatVC.swift */; };
-		B050EDA02278F206005C8EE2 /* CommentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B050ED9F2278F206005C8EE2 /* CommentsVC.swift */; };
-		B050EDA22278F220005C8EE2 /* UpdateCommentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B050EDA12278F220005C8EE2 /* UpdateCommentVC.swift */; };
 		B050EDA42278FB40005C8EE2 /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B050EDA32278FB40005C8EE2 /* Message.storyboard */; };
-		B050EDA82279036D005C8EE2 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = B050EDA72279036D005C8EE2 /* Chat.swift */; };
 		B050EDAA22790384005C8EE2 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B050EDA922790384005C8EE2 /* Comment.swift */; };
-		B050EDAC227903E9005C8EE2 /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B050EDAB227903E9005C8EE2 /* ChatCell.swift */; };
 		B050EDAE22790408005C8EE2 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B050EDAD22790408005C8EE2 /* CommentCell.swift */; };
 		B050EDB1227A93FA005C8EE2 /* RomajiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B050EDAF227A93FA005C8EE2 /* RomajiViewController.swift */; };
 		B050EDB2227A93FA005C8EE2 /* RomajiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B050EDB0227A93FA005C8EE2 /* RomajiViewController.xib */; };
@@ -107,14 +101,8 @@
 		B04677CA22740F4700A1897E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B04677D02274216A00A1897E /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
 		B04677D12274216A00A1897E /* ForgotPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotPasswordViewController.xib; sourceTree = "<group>"; };
-		B050ED9B2278E25E005C8EE2 /* MessageMainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageMainVC.swift; sourceTree = "<group>"; };
-		B050ED9D2278F1E8005C8EE2 /* AddChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChatVC.swift; sourceTree = "<group>"; };
-		B050ED9F2278F206005C8EE2 /* CommentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsVC.swift; sourceTree = "<group>"; };
-		B050EDA12278F220005C8EE2 /* UpdateCommentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateCommentVC.swift; sourceTree = "<group>"; };
 		B050EDA32278FB40005C8EE2 /* Message.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Message.storyboard; sourceTree = "<group>"; };
-		B050EDA72279036D005C8EE2 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		B050EDA922790384005C8EE2 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
-		B050EDAB227903E9005C8EE2 /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
 		B050EDAD22790408005C8EE2 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		B050EDAF227A93FA005C8EE2 /* RomajiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RomajiViewController.swift; sourceTree = "<group>"; };
 		B050EDB0227A93FA005C8EE2 /* RomajiViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RomajiViewController.xib; sourceTree = "<group>"; };
@@ -206,11 +194,7 @@
 				B046772A22724A9F00A1897E /* DetailsVC.swift */,
 				B006F09C226DDF9C0016EEFD /* FortuneTellingVC.swift */,
 				B006F0AC226EA1820016EEFD /* ResultVC.swift */,
-				B050ED9D2278F1E8005C8EE2 /* AddChatVC.swift */,
 				B0B58699227D2E1600DC03E5 /* SettingVC.swift */,
-				B050ED9B2278E25E005C8EE2 /* MessageMainVC.swift */,
-				B050ED9F2278F206005C8EE2 /* CommentsVC.swift */,
-				B050EDA12278F220005C8EE2 /* UpdateCommentVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -229,7 +213,6 @@
 				B04677282271C70D00A1897E /* SelectNumberCell.swift */,
 				B050EDAF227A93FA005C8EE2 /* RomajiViewController.swift */,
 				B050EDB0227A93FA005C8EE2 /* RomajiViewController.xib */,
-				B050EDAB227903E9005C8EE2 /* ChatCell.swift */,
 				B050EDAD22790408005C8EE2 /* CommentCell.swift */,
 				B002BD04228AA8DD00B837D3 /* ForgotPWVC.swift */,
 				B002BD05228AA8DD00B837D3 /* ForgotPWVC.xib */,
@@ -248,7 +231,6 @@
 				B00F085822706DEC00D1AE54 /* Category.swift */,
 				B00F085A22706E1300D1AE54 /* Number.swift */,
 				B00F085C22706E2500D1AE54 /* DataSet.swift */,
-				B050EDA72279036D005C8EE2 /* Chat.swift */,
 				B050EDA922790384005C8EE2 /* Comment.swift */,
 				B0B586A7227D646700DC03E5 /* User.swift */,
 			);
@@ -408,9 +390,6 @@
 				B00F085922706DEC00D1AE54 /* Category.swift in Sources */,
 				B00F085D22706E2500D1AE54 /* DataSet.swift in Sources */,
 				B04677252271AFA200A1897E /* SelectNumberVC.swift in Sources */,
-				B050EDA82279036D005C8EE2 /* Chat.swift in Sources */,
-				B050ED9E2278F1E8005C8EE2 /* AddChatVC.swift in Sources */,
-				B050EDA02278F206005C8EE2 /* CommentsVC.swift in Sources */,
 				B006F07F226DDECB0016EEFD /* AppDelegate.swift in Sources */,
 				B006F09D226DDF9C0016EEFD /* FortuneTellingVC.swift in Sources */,
 				B046772B22724A9F00A1897E /* DetailsVC.swift in Sources */,
@@ -422,7 +401,6 @@
 				B006F0BB226F0E0C0016EEFD /* HomeCollectionCell.swift in Sources */,
 				B0B586A8227D646700DC03E5 /* User.swift in Sources */,
 				B006F0AD226EA1820016EEFD /* ResultVC.swift in Sources */,
-				B050ED9C2278E25E005C8EE2 /* MessageMainVC.swift in Sources */,
 				B04677BB2273E32A00A1897E /* NumericalInversion.swift in Sources */,
 				B04677292271C70D00A1897E /* SelectNumberCell.swift in Sources */,
 				B04677BF2273E57C00A1897E /* SoulNum.swift in Sources */,
@@ -432,9 +410,7 @@
 				B04677C32274027E00A1897E /* DefineTabBar.swift in Sources */,
 				B00F088122715DB800D1AE54 /* ResultTableViewCell.swift in Sources */,
 				B04677D22274216A00A1897E /* ForgotPasswordVC.swift in Sources */,
-				B050EDAC227903E9005C8EE2 /* ChatCell.swift in Sources */,
 				B006F0A9226EA1150016EEFD /* DestinyNum.swift in Sources */,
-				B050EDA22278F220005C8EE2 /* UpdateCommentVC.swift in Sources */,
 				B006F099226DDF860016EEFD /* HomeVC.swift in Sources */,
 				B046773122727B2000A1897E /* RegisterVC.swift in Sources */,
 				B006F0A5226EA0C90016EEFD /* LifePassNum.swift in Sources */,

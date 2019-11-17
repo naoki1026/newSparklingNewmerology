@@ -19,13 +19,13 @@ class DefineTabBar : NSObject {
     //storyboardをコードで定義している
     let homeStoryboard = UIStoryboard(name: "Home", bundle: nil)
     let numorologyStoryboard = UIStoryboard(name: "Numerology", bundle: nil)
-    let messageStoryboard = UIStoryboard(name: "Message", bundle: nil)
+//    let messageStoryboard = UIStoryboard(name: "Message", bundle: nil)
     let settingStoryboard = UIStoryboard(name: "Setting", bundle: nil)
     
     //インスタンス（実体化）からViewControllerを取得している
     let homeVC = homeStoryboard.instantiateViewController(withIdentifier: "Home") as! HomeVC
     let numerologyVC = numorologyStoryboard.instantiateViewController(withIdentifier: "Numerology") as! NumerologyVC
-    let messageMainVC = messageStoryboard.instantiateViewController(withIdentifier: "MessageMain") as! MessageMainVC
+//    let messageMainVC = messageStoryboard.instantiateViewController(withIdentifier: "MessageMain") as! MessageMainVC
     let settingVC = settingStoryboard.instantiateViewController(withIdentifier: "Setting") as! SettingVC
     
     //配列の中に、タプルで複数の型の値をまとめている
@@ -33,7 +33,7 @@ class DefineTabBar : NSObject {
       
       (homeVC, UIImage(named: "house_white")!, UIImage(named: "house_gold")!),
       (numerologyVC, UIImage(named: "numerology_white")!, UIImage(named: "numerology_gold")!),
-      (messageMainVC, UIImage(named: "comment_white")!, UIImage(named: "comment_gold")!),
+//      (messageMainVC, UIImage(named: "comment_white")!, UIImage(named: "comment_gold")!),
       (settingVC, UIImage(named: "setting_white")!, UIImage(named: "setting_gold")!)
       
     ]

@@ -29,7 +29,6 @@ struct AppColors {
   static let lightGold = UIColor(red: 252/255, green: 231/255, blue: 180/255, alpha: 1)
 }
 
-
 let USERS_REF = "users"
 let COMMENTS_REF = "comments"
 let CHATS_REF = "chats"
@@ -45,7 +44,5 @@ let MESSAGE_TXT = "messageText"
 let USER_ID = "userId"
 let FROM_ID = "fromId"
 let TO_ID = "toId"
-
 let adminID = "njz4ERqncpOyHJSOEh0on42HOaQ2"
-
 let specialAuthority = "naoki.arakawa1026@gmail.com"
