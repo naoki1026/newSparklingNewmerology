@@ -8,41 +8,14 @@
 
 import UIKit
 import RealmSwift
-import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
   
   var window: UIWindow?
-  var authListener : AuthStateDidChangeListenerHandle?
   
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    
-    FirebaseApp.configure()
-    
-     //Override point for customization after application launch.
 
-    do {
-      _ = try Realm()
-      print(Realm.Configuration.defaultConfiguration.fileURL!)
-
-    } catch {
-
-      print("Error initialising new realm, \(error)")
-
-    }
-    
-    if Auth.auth().currentUser != nil {
-      
-      
-     print("user sign in ")
-     DefineTabBar.createTabBar()
-    } else {
-      
-      
-     print("user sign out ")
-      return true
-    }
 
     
     return true

@@ -11,12 +11,12 @@ pod 'ProgressHUD'
 pod 'ChameleonFramework/Swift'
 pod 'RealmSwift', '~> 3.20.0'
 pod 'SwipeCellKit'
-pod 'Firebase/Core'
-pod 'Firebase/Auth'
-pod 'Firebase/Firestore'
-pod 'Firebase/Storage'
-pod 'Firebase/Database'
-pod 'Firebase/Firestore'
+#pod 'Firebase/Core'
+#pod 'Firebase/Auth'
+#pod 'Firebase/Firestore'
+#pod 'Firebase/Storage'
+#pod 'Firebase/Database'
+#pod 'Firebase/Firestore'
 #pod "ReverseExtension"
 
 end

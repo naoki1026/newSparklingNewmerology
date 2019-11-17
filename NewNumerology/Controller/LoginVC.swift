@@ -8,47 +8,12 @@
 
 import UIKit
 import Pastel
-import Firebase
-import ProgressHUD
 
 class LoginVC: UIViewController {
-  
-  @IBOutlet weak var emailTextField: UITextField!
-  @IBOutlet weak var passwordTextField: UITextField!
-  @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-  @IBOutlet weak var loginButton: UIButton!
-  
-  
-  let dontHaveAccountButton : UIButton = {
-    let button = UIButton(type: .system)
-    
-    let attributedTitle = NSMutableAttributedString(string: "アカウントを持っていない場合", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 14), NSAttributedString.Key.foregroundColor: UIColor.white])
-    
-    attributedTitle.append(NSAttributedString(string: " 登録はこちら", attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 14), NSAttributedString.Key.foregroundColor: UIColor.white]))
-    
-    //ボタンがタップされたタイミングでhandleShowSignUp関数が発動する
-    button.addTarget(self, action: #selector(handleShowSignUp), for: .touchUpInside)
-    button.setAttributedTitle(attributedTitle, for: .normal)
-    return button
-    
-  }()
-  
+
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-    emailTextField.text = "test@test.com"
-    passwordTextField.text = "123456"
-    loginButton.backgroundColor = AppColors.validBlue
-    
-    emailTextField.addTarget(self, action: #selector(formaValidation), for: .editingChanged)
-    passwordTextField.addTarget(self, action: #selector(formaValidation), for: .editingChanged)
-    
-    //ログインボタンの角を丸くする
-    loginButton.layer.cornerRadius = 5
-    
-    view.addSubview(dontHaveAccountButton)
-    dontHaveAccountButton.anchor(top: nil, left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 60)
-    
+
     //ナビゲーションバーの非表示
     navigationController?.setNavigationBarHidden(true, animated: false)
     
@@ -72,98 +37,11 @@ class LoginVC: UIViewController {
     
     pastelView.startAnimation()
     view.insertSubview(pastelView, at: 0)
-  }
-  
-  //MARK:Handlers
-  
-  @objc func handleShowSignUp () {
     
-    performSegue(withIdentifier: "toRegister", sender: self)
-  }
-  
-  
-  @IBAction func forgotPassClicked(_ sender: Any) {
-    
-    //ここでのvcはForgotPasswordVCのことを指す
-    let vc = ForgotPWVC()
-    
-    //どのように画面に遷移するか
-    vc.modalTransitionStyle = .crossDissolve
-    vc.modalPresentationStyle = .overCurrentContext
-    present(vc, animated: true, completion: nil)
-    
-  }
-  
-  @IBAction func loginClicked(_ sender: Any) {
-    
-    guard let email = emailTextField.text, email.isNotEmpty ,
-      let password = passwordTextField.text, password.isNotEmpty else {
+    DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+       DefineTabBar.createTabBar()
         
-        ProgressHUD.showError("メールアドレスとパスワードを入力してください")
-        
-        return }
-    
-    ProgressHUD.show("ログイン中です・・・")
-    
-    //{ (user, error)に関して、今のところはこういうものだと理解しておけばいいのかな
-    Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
-      
-      if error != nil {
-        ProgressHUD.showError("入力内容が正しくありません")
-        return
-        
-      }
-      
-      ProgressHUD.showSuccess("ログインに成功しました")
-      
-      //Present the app
-      DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-
-         DefineTabBar.createTabBar()
-        
-      }
     }
   }
-  
-  @objc func formaValidation(){
-    
-    guard
-      emailTextField.hasText,
-      passwordTextField.hasText else {
-        
-        //入力内容を満たしていない場合
-        loginButton.isEnabled = false
-        loginButton.backgroundColor = AppColors.inValidBlue
-        return
-    }
-    
-    //正しく入力されている場合
-    loginButton.isEnabled = true
-    loginButton.backgroundColor = AppColors.validBlue
-    return
-    
-  }
 }
-
-extension LoginVC {
   
-  //空いているところをクリックした時にキーボードを閉じる
-  override open func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-    
-    emailTextField.resignFirstResponder()
-    passwordTextField.resignFirstResponder()
-    
-  }
-  
-  //リターンキーをクリックした時にキーボードを閉じる
-  func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-    
-    //キーボードを閉じる
-    emailTextField.resignFirstResponder()
-    passwordTextField.resignFirstResponder()
-    
-    return true
-    
-  }
-  
-}

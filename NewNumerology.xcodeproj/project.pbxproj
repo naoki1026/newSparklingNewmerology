@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B002BD06228AA8DD00B837D3 /* ForgotPWVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B002BD04228AA8DD00B837D3 /* ForgotPWVC.swift */; };
-		B002BD07228AA8DD00B837D3 /* ForgotPWVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B002BD05228AA8DD00B837D3 /* ForgotPWVC.xib */; };
 		B006F07F226DDECB0016EEFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B006F07E226DDECB0016EEFD /* AppDelegate.swift */; };
 		B006F091226DDEEC0016EEFD /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B006F090226DDEEC0016EEFD /* Home.storyboard */; };
 		B006F093226DDF000016EEFD /* Numerology.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B006F092226DDF000016EEFD /* Numerology.storyboard */; };
@@ -37,15 +35,12 @@
 		B046772B22724A9F00A1897E /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B046772A22724A9F00A1897E /* DetailsVC.swift */; };
 		B046772D2272782600A1897E /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B046772C2272782600A1897E /* Login.storyboard */; };
 		B046772F22727B0F00A1897E /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B046772E22727B0F00A1897E /* LoginVC.swift */; };
-		B046773122727B2000A1897E /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B046773022727B2000A1897E /* RegisterVC.swift */; };
 		B04677BB2273E32A00A1897E /* NumericalInversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04677BA2273E32A00A1897E /* NumericalInversion.swift */; };
 		B04677BD2273E50600A1897E /* BalanceNum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04677BC2273E50600A1897E /* BalanceNum.swift */; };
 		B04677BF2273E57C00A1897E /* SoulNum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04677BE2273E57C00A1897E /* SoulNum.swift */; };
 		B04677C32274027E00A1897E /* DefineTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04677C22274027E00A1897E /* DefineTabBar.swift */; };
 		B04677C5227405C700A1897E /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04677C4227405C700A1897E /* Extension.swift */; };
 		B04677CB22740F4800A1897E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B04677CA22740F4700A1897E /* GoogleService-Info.plist */; };
-		B04677D22274216A00A1897E /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04677D02274216A00A1897E /* ForgotPasswordVC.swift */; };
-		B04677D32274216A00A1897E /* ForgotPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B04677D12274216A00A1897E /* ForgotPasswordViewController.xib */; };
 		B050EDAA22790384005C8EE2 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B050EDA922790384005C8EE2 /* Comment.swift */; };
 		B050EDAE22790408005C8EE2 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B050EDAD22790408005C8EE2 /* CommentCell.swift */; };
 		B050EDB1227A93FA005C8EE2 /* RomajiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B050EDAF227A93FA005C8EE2 /* RomajiViewController.swift */; };
@@ -58,8 +53,6 @@
 
 /* Begin PBXFileReference section */
 		1C82B0E0DD7EBFA3B97951DB /* Pods-NewNumerology.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewNumerology.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NewNumerology/Pods-NewNumerology.debug.xcconfig"; sourceTree = "<group>"; };
-		B002BD04228AA8DD00B837D3 /* ForgotPWVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPWVC.swift; sourceTree = "<group>"; };
-		B002BD05228AA8DD00B837D3 /* ForgotPWVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotPWVC.xib; sourceTree = "<group>"; };
 		B006F07B226DDECB0016EEFD /* NewNumerology.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewNumerology.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B006F07E226DDECB0016EEFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B006F08A226DDECB0016EEFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -91,15 +84,12 @@
 		B046772A22724A9F00A1897E /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
 		B046772C2272782600A1897E /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		B046772E22727B0F00A1897E /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
-		B046773022727B2000A1897E /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		B04677BA2273E32A00A1897E /* NumericalInversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericalInversion.swift; sourceTree = "<group>"; };
 		B04677BC2273E50600A1897E /* BalanceNum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceNum.swift; sourceTree = "<group>"; };
 		B04677BE2273E57C00A1897E /* SoulNum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoulNum.swift; sourceTree = "<group>"; };
 		B04677C22274027E00A1897E /* DefineTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefineTabBar.swift; sourceTree = "<group>"; };
 		B04677C4227405C700A1897E /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		B04677CA22740F4700A1897E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		B04677D02274216A00A1897E /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
-		B04677D12274216A00A1897E /* ForgotPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotPasswordViewController.xib; sourceTree = "<group>"; };
 		B050EDA922790384005C8EE2 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		B050EDAD22790408005C8EE2 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		B050EDAF227A93FA005C8EE2 /* RomajiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RomajiViewController.swift; sourceTree = "<group>"; };
@@ -185,7 +175,6 @@
 			isa = PBXGroup;
 			children = (
 				B046772E22727B0F00A1897E /* LoginVC.swift */,
-				B046773022727B2000A1897E /* RegisterVC.swift */,
 				B006F098226DDF860016EEFD /* HomeVC.swift */,
 				B006F09A226DDF900016EEFD /* NumerologyVC.swift */,
 				B04677242271AFA200A1897E /* SelectNumberVC.swift */,
@@ -211,10 +200,6 @@
 				B050EDAF227A93FA005C8EE2 /* RomajiViewController.swift */,
 				B050EDB0227A93FA005C8EE2 /* RomajiViewController.xib */,
 				B050EDAD22790408005C8EE2 /* CommentCell.swift */,
-				B002BD04228AA8DD00B837D3 /* ForgotPWVC.swift */,
-				B002BD05228AA8DD00B837D3 /* ForgotPWVC.xib */,
-				B04677D02274216A00A1897E /* ForgotPasswordVC.swift */,
-				B04677D12274216A00A1897E /* ForgotPasswordViewController.xib */,
 				B011BCBA228D44E50075FDE3 /* HomeExplanation.swift */,
 				B011BCBB228D44E50075FDE3 /* HomeExplanation.xib */,
 			);
@@ -322,10 +307,8 @@
 				B046772D2272782600A1897E /* Login.storyboard in Resources */,
 				B006F097226DDF1C0016EEFD /* Setting.storyboard in Resources */,
 				B04677CB22740F4800A1897E /* GoogleService-Info.plist in Resources */,
-				B002BD07228AA8DD00B837D3 /* ForgotPWVC.xib in Resources */,
 				B050EDB2227A93FA005C8EE2 /* RomajiViewController.xib in Resources */,
 				B050EDB4227AC5D5005C8EE2 /* Assets.xcassets in Resources */,
-				B04677D32274216A00A1897E /* ForgotPasswordViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,14 +384,11 @@
 				B04677292271C70D00A1897E /* SelectNumberCell.swift in Sources */,
 				B04677BF2273E57C00A1897E /* SoulNum.swift in Sources */,
 				B00F085B22706E1300D1AE54 /* Number.swift in Sources */,
-				B002BD06228AA8DD00B837D3 /* ForgotPWVC.swift in Sources */,
 				B006F0AB226EA1320016EEFD /* PersonalNum.swift in Sources */,
 				B04677C32274027E00A1897E /* DefineTabBar.swift in Sources */,
 				B00F088122715DB800D1AE54 /* ResultTableViewCell.swift in Sources */,
-				B04677D22274216A00A1897E /* ForgotPasswordVC.swift in Sources */,
 				B006F0A9226EA1150016EEFD /* DestinyNum.swift in Sources */,
 				B006F099226DDF860016EEFD /* HomeVC.swift in Sources */,
-				B046773122727B2000A1897E /* RegisterVC.swift in Sources */,
 				B006F0A5226EA0C90016EEFD /* LifePassNum.swift in Sources */,
 				B050EDAA22790384005C8EE2 /* Comment.swift in Sources */,
 				B04677C5227405C700A1897E /* Extension.swift in Sources */,

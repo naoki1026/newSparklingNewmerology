@@ -43,7 +43,6 @@ class ResultVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UI
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    
     tableView.delegate = self
     tableView.dataSource = self
     tableView.isScrollEnabled = false
@@ -51,12 +50,8 @@ class ResultVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UI
     
     self.navigationController?.navigationBar.tintColor = AppColors.naviPurple
     self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : AppColors.naviPurple]
-    
     imageColor()
-    
     tableView.tableFooterView = UIView(frame: .zero)
-    
-    
   }
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -246,15 +241,11 @@ class ResultVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UI
       nextPage()
       
     }
-    
   }
   
   func changeNumber(number : Int) -> Int{
-    
     var changeNumber = 0
-    
     switch number {
-      
     case 1: changeNumber = 0
     case 2: changeNumber = 1
     case 3: changeNumber = 2
@@ -268,11 +259,8 @@ class ResultVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UI
     case 22: changeNumber = 10
     case 33: changeNumber = 11
     default : changeNumber = 0
-      
     }
-    
     return changeNumber
-    
   }
   
   func nextPage(){
