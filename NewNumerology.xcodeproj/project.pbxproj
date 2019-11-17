@@ -1,0 +1,631 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B002BD06228AA8DD00B837D3 /* ForgotPWVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B002BD04228AA8DD00B837D3 /* ForgotPWVC.swift */; };
+		B002BD07228AA8DD00B837D3 /* ForgotPWVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B002BD05228AA8DD00B837D3 /* ForgotPWVC.xib */; };
+		B006F07F226DDECB0016EEFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B006F07E226DDECB0016EEFD /* AppDelegate.swift */; };
+		B006F091226DDEEC0016EEFD /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B006F090226DDEEC0016EEFD /* Home.storyboard */; };
+		B006F093226DDF000016EEFD /* Numerology.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B006F092226DDF000016EEFD /* Numerology.storyboard */; };
+		B006F097226DDF1C0016EEFD /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B006F096226DDF1C0016EEFD /* Setting.storyboard */; };
+		B006F099226DDF860016EEFD /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B006F098226DDF860016EEFD /* HomeVC.swift */; };
+		B006F09B226DDF900016EEFD /* NumerologyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B006F09A226DDF900016EEFD /* NumerologyVC.swift */; };
+		B006F09D226DDF9C0016EEFD /* FortuneTellingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B006F09C226DDF9C0016EEFD /* FortuneTellingVC.swift */; };
+		B006F0A5226EA0C90016EEFD /* LifePassNum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B006F0A4226EA0C90016EEFD /* LifePassNum.swift */; };
+		B006F0A7226EA0F80016EEFD /* SpiritualNum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B006F0A6226EA0F80016EEFD /* SpiritualNum.swift */; };
+		B006F0A9226EA1150016EEFD /* DestinyNum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B006F0A8226EA1150016EEFD /* DestinyNum.swift */; };
+		B006F0AB226EA1320016EEFD /* PersonalNum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B006F0AA226EA1320016EEFD /* PersonalNum.swift */; };
+		B006F0AD226EA1820016EEFD /* ResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B006F0AC226EA1820016EEFD /* ResultVC.swift */; };
+		B006F0AF226EA1B60016EEFD /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = B006F0AE226EA1B60016EEFD /* Error.swift */; };
+		B006F0B5226EDAF60016EEFD /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B006F0B4226EDAF60016EEFD /* Model.swift */; };
+		B006F0BB226F0E0C0016EEFD /* HomeCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B006F0BA226F0E0C0016EEFD /* HomeCollectionCell.swift */; };
+		B00F085322705B1700D1AE54 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00F085222705B1700D1AE54 /* Constants.swift */; };
+		B00F0855227068F600D1AE54 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00F0854227068F600D1AE54 /* CategoryCell.swift */; };
+		B00F085922706DEC00D1AE54 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00F085822706DEC00D1AE54 /* Category.swift */; };
+		B00F085B22706E1300D1AE54 /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00F085A22706E1300D1AE54 /* Number.swift */; };
+		B00F085D22706E2500D1AE54 /* DataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00F085C22706E2500D1AE54 /* DataSet.swift */; };
+		B00F088122715DB800D1AE54 /* ResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00F088022715DB800D1AE54 /* ResultTableViewCell.swift */; };
+		B011BCBC228D44E50075FDE3 /* HomeExplanation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B011BCBA228D44E50075FDE3 /* HomeExplanation.swift */; };
+		B011BCBD228D44E50075FDE3 /* HomeExplanation.xib in Resources */ = {isa = PBXBuildFile; fileRef = B011BCBB228D44E50075FDE3 /* HomeExplanation.xib */; };
+		B04677252271AFA200A1897E /* SelectNumberVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04677242271AFA200A1897E /* SelectNumberVC.swift */; };
+		B04677292271C70D00A1897E /* SelectNumberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04677282271C70D00A1897E /* SelectNumberCell.swift */; };
+		B046772B22724A9F00A1897E /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B046772A22724A9F00A1897E /* DetailsVC.swift */; };
+		B046772D2272782600A1897E /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B046772C2272782600A1897E /* Login.storyboard */; };
+		B046772F22727B0F00A1897E /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B046772E22727B0F00A1897E /* LoginVC.swift */; };
+		B046773122727B2000A1897E /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B046773022727B2000A1897E /* RegisterVC.swift */; };
+		B04677BB2273E32A00A1897E /* NumericalInversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04677BA2273E32A00A1897E /* NumericalInversion.swift */; };
+		B04677BD2273E50600A1897E /* BalanceNum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04677BC2273E50600A1897E /* BalanceNum.swift */; };
+		B04677BF2273E57C00A1897E /* SoulNum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04677BE2273E57C00A1897E /* SoulNum.swift */; };
+		B04677C32274027E00A1897E /* DefineTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04677C22274027E00A1897E /* DefineTabBar.swift */; };
+		B04677C5227405C700A1897E /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04677C4227405C700A1897E /* Extension.swift */; };
+		B04677CB22740F4800A1897E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B04677CA22740F4700A1897E /* GoogleService-Info.plist */; };
+		B04677D22274216A00A1897E /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04677D02274216A00A1897E /* ForgotPasswordVC.swift */; };
+		B04677D32274216A00A1897E /* ForgotPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B04677D12274216A00A1897E /* ForgotPasswordViewController.xib */; };
+		B050ED9C2278E25E005C8EE2 /* MessageMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B050ED9B2278E25E005C8EE2 /* MessageMainVC.swift */; };
+		B050ED9E2278F1E8005C8EE2 /* AddChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B050ED9D2278F1E8005C8EE2 /* AddChatVC.swift */; };
+		B050EDA02278F206005C8EE2 /* CommentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B050ED9F2278F206005C8EE2 /* CommentsVC.swift */; };
+		B050EDA22278F220005C8EE2 /* UpdateCommentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B050EDA12278F220005C8EE2 /* UpdateCommentVC.swift */; };
+		B050EDA42278FB40005C8EE2 /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B050EDA32278FB40005C8EE2 /* Message.storyboard */; };
+		B050EDA82279036D005C8EE2 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = B050EDA72279036D005C8EE2 /* Chat.swift */; };
+		B050EDAA22790384005C8EE2 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B050EDA922790384005C8EE2 /* Comment.swift */; };
+		B050EDAC227903E9005C8EE2 /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B050EDAB227903E9005C8EE2 /* ChatCell.swift */; };
+		B050EDAE22790408005C8EE2 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B050EDAD22790408005C8EE2 /* CommentCell.swift */; };
+		B050EDB1227A93FA005C8EE2 /* RomajiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B050EDAF227A93FA005C8EE2 /* RomajiViewController.swift */; };
+		B050EDB2227A93FA005C8EE2 /* RomajiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B050EDB0227A93FA005C8EE2 /* RomajiViewController.xib */; };
+		B050EDB4227AC5D5005C8EE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B050EDB3227AC5D5005C8EE2 /* Assets.xcassets */; };
+		B0B5869A227D2E1600DC03E5 /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B58699227D2E1600DC03E5 /* SettingVC.swift */; };
+		B0B586A8227D646700DC03E5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B586A7227D646700DC03E5 /* User.swift */; };
+		FDEEDDD8333210F1DE31993E /* Pods_NewNumerology.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B02EFA71DA3AD9B0D3604583 /* Pods_NewNumerology.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1C82B0E0DD7EBFA3B97951DB /* Pods-NewNumerology.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewNumerology.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NewNumerology/Pods-NewNumerology.debug.xcconfig"; sourceTree = "<group>"; };
+		B002BD04228AA8DD00B837D3 /* ForgotPWVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPWVC.swift; sourceTree = "<group>"; };
+		B002BD05228AA8DD00B837D3 /* ForgotPWVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotPWVC.xib; sourceTree = "<group>"; };
+		B006F07B226DDECB0016EEFD /* NewNumerology.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewNumerology.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B006F07E226DDECB0016EEFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B006F08A226DDECB0016EEFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B006F090226DDEEC0016EEFD /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		B006F092226DDF000016EEFD /* Numerology.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Numerology.storyboard; sourceTree = "<group>"; };
+		B006F096226DDF1C0016EEFD /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		B006F098226DDF860016EEFD /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		B006F09A226DDF900016EEFD /* NumerologyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumerologyVC.swift; sourceTree = "<group>"; };
+		B006F09C226DDF9C0016EEFD /* FortuneTellingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortuneTellingVC.swift; sourceTree = "<group>"; };
+		B006F0A4226EA0C90016EEFD /* LifePassNum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifePassNum.swift; sourceTree = "<group>"; };
+		B006F0A6226EA0F80016EEFD /* SpiritualNum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiritualNum.swift; sourceTree = "<group>"; };
+		B006F0A8226EA1150016EEFD /* DestinyNum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinyNum.swift; sourceTree = "<group>"; };
+		B006F0AA226EA1320016EEFD /* PersonalNum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalNum.swift; sourceTree = "<group>"; };
+		B006F0AC226EA1820016EEFD /* ResultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultVC.swift; sourceTree = "<group>"; };
+		B006F0AE226EA1B60016EEFD /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		B006F0B4226EDAF60016EEFD /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		B006F0BA226F0E0C0016EEFD /* HomeCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionCell.swift; sourceTree = "<group>"; };
+		B00F085222705B1700D1AE54 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B00F0854227068F600D1AE54 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		B00F085822706DEC00D1AE54 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		B00F085A22706E1300D1AE54 /* Number.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Number.swift; sourceTree = "<group>"; };
+		B00F085C22706E2500D1AE54 /* DataSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSet.swift; sourceTree = "<group>"; };
+		B00F088022715DB800D1AE54 /* ResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTableViewCell.swift; sourceTree = "<group>"; };
+		B011BCBA228D44E50075FDE3 /* HomeExplanation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeExplanation.swift; sourceTree = "<group>"; };
+		B011BCBB228D44E50075FDE3 /* HomeExplanation.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeExplanation.xib; sourceTree = "<group>"; };
+		B02EFA71DA3AD9B0D3604583 /* Pods_NewNumerology.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewNumerology.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B04677242271AFA200A1897E /* SelectNumberVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectNumberVC.swift; sourceTree = "<group>"; };
+		B04677282271C70D00A1897E /* SelectNumberCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectNumberCell.swift; sourceTree = "<group>"; };
+		B046772A22724A9F00A1897E /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
+		B046772C2272782600A1897E /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		B046772E22727B0F00A1897E /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		B046773022727B2000A1897E /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		B04677BA2273E32A00A1897E /* NumericalInversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericalInversion.swift; sourceTree = "<group>"; };
+		B04677BC2273E50600A1897E /* BalanceNum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceNum.swift; sourceTree = "<group>"; };
+		B04677BE2273E57C00A1897E /* SoulNum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoulNum.swift; sourceTree = "<group>"; };
+		B04677C22274027E00A1897E /* DefineTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefineTabBar.swift; sourceTree = "<group>"; };
+		B04677C4227405C700A1897E /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		B04677CA22740F4700A1897E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B04677D02274216A00A1897E /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
+		B04677D12274216A00A1897E /* ForgotPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotPasswordViewController.xib; sourceTree = "<group>"; };
+		B050ED9B2278E25E005C8EE2 /* MessageMainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageMainVC.swift; sourceTree = "<group>"; };
+		B050ED9D2278F1E8005C8EE2 /* AddChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChatVC.swift; sourceTree = "<group>"; };
+		B050ED9F2278F206005C8EE2 /* CommentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsVC.swift; sourceTree = "<group>"; };
+		B050EDA12278F220005C8EE2 /* UpdateCommentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateCommentVC.swift; sourceTree = "<group>"; };
+		B050EDA32278FB40005C8EE2 /* Message.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Message.storyboard; sourceTree = "<group>"; };
+		B050EDA72279036D005C8EE2 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		B050EDA922790384005C8EE2 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		B050EDAB227903E9005C8EE2 /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
+		B050EDAD22790408005C8EE2 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		B050EDAF227A93FA005C8EE2 /* RomajiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RomajiViewController.swift; sourceTree = "<group>"; };
+		B050EDB0227A93FA005C8EE2 /* RomajiViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RomajiViewController.xib; sourceTree = "<group>"; };
+		B050EDB3227AC5D5005C8EE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B0B58699227D2E1600DC03E5 /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
+		B0B586A7227D646700DC03E5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B6BAFA85EB3377089566F7FB /* Pods-NewNumerology.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewNumerology.release.xcconfig"; path = "Pods/Target Support Files/Pods-NewNumerology/Pods-NewNumerology.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B006F078226DDECB0016EEFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDEEDDD8333210F1DE31993E /* Pods_NewNumerology.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		148B24911821402B77453E6D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1C82B0E0DD7EBFA3B97951DB /* Pods-NewNumerology.debug.xcconfig */,
+				B6BAFA85EB3377089566F7FB /* Pods-NewNumerology.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B006F072226DDECB0016EEFD = {
+			isa = PBXGroup;
+			children = (
+				B006F07D226DDECB0016EEFD /* NewNumerology */,
+				B006F07C226DDECB0016EEFD /* Products */,
+				148B24911821402B77453E6D /* Pods */,
+				C4C7496327EE41A40BB363E7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B006F07C226DDECB0016EEFD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B006F07B226DDECB0016EEFD /* NewNumerology.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B006F07D226DDECB0016EEFD /* NewNumerology */ = {
+			isa = PBXGroup;
+			children = (
+				B00F082B227024FF00D1AE54 /* Utils */,
+				B006F0A3226DE3550016EEFD /* Model */,
+				B006F0A2226DE34F0016EEFD /* View */,
+				B006F0A1226DE3440016EEFD /* Controller */,
+				B006F0A0226DE3260016EEFD /* Class */,
+				B006F07E226DDECB0016EEFD /* AppDelegate.swift */,
+				B04677CA22740F4700A1897E /* GoogleService-Info.plist */,
+				B006F08A226DDECB0016EEFD /* Info.plist */,
+				B006F0AE226EA1B60016EEFD /* Error.swift */,
+			);
+			path = NewNumerology;
+			sourceTree = "<group>";
+		};
+		B006F0A0226DE3260016EEFD /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				B006F0A4226EA0C90016EEFD /* LifePassNum.swift */,
+				B006F0A8226EA1150016EEFD /* DestinyNum.swift */,
+				B04677BE2273E57C00A1897E /* SoulNum.swift */,
+				B006F0AA226EA1320016EEFD /* PersonalNum.swift */,
+				B006F0A6226EA0F80016EEFD /* SpiritualNum.swift */,
+				B04677BC2273E50600A1897E /* BalanceNum.swift */,
+				B04677BA2273E32A00A1897E /* NumericalInversion.swift */,
+				B04677C22274027E00A1897E /* DefineTabBar.swift */,
+				B050EDB3227AC5D5005C8EE2 /* Assets.xcassets */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		B006F0A1226DE3440016EEFD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B046772E22727B0F00A1897E /* LoginVC.swift */,
+				B046773022727B2000A1897E /* RegisterVC.swift */,
+				B006F098226DDF860016EEFD /* HomeVC.swift */,
+				B006F09A226DDF900016EEFD /* NumerologyVC.swift */,
+				B04677242271AFA200A1897E /* SelectNumberVC.swift */,
+				B046772A22724A9F00A1897E /* DetailsVC.swift */,
+				B006F09C226DDF9C0016EEFD /* FortuneTellingVC.swift */,
+				B006F0AC226EA1820016EEFD /* ResultVC.swift */,
+				B050ED9D2278F1E8005C8EE2 /* AddChatVC.swift */,
+				B0B58699227D2E1600DC03E5 /* SettingVC.swift */,
+				B050ED9B2278E25E005C8EE2 /* MessageMainVC.swift */,
+				B050ED9F2278F206005C8EE2 /* CommentsVC.swift */,
+				B050EDA12278F220005C8EE2 /* UpdateCommentVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B006F0A2226DE34F0016EEFD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B046772C2272782600A1897E /* Login.storyboard */,
+				B006F090226DDEEC0016EEFD /* Home.storyboard */,
+				B006F092226DDF000016EEFD /* Numerology.storyboard */,
+				B050EDA32278FB40005C8EE2 /* Message.storyboard */,
+				B006F096226DDF1C0016EEFD /* Setting.storyboard */,
+				B006F0BA226F0E0C0016EEFD /* HomeCollectionCell.swift */,
+				B00F088022715DB800D1AE54 /* ResultTableViewCell.swift */,
+				B00F0854227068F600D1AE54 /* CategoryCell.swift */,
+				B04677282271C70D00A1897E /* SelectNumberCell.swift */,
+				B050EDAF227A93FA005C8EE2 /* RomajiViewController.swift */,
+				B050EDB0227A93FA005C8EE2 /* RomajiViewController.xib */,
+				B050EDAB227903E9005C8EE2 /* ChatCell.swift */,
+				B050EDAD22790408005C8EE2 /* CommentCell.swift */,
+				B002BD04228AA8DD00B837D3 /* ForgotPWVC.swift */,
+				B002BD05228AA8DD00B837D3 /* ForgotPWVC.xib */,
+				B04677D02274216A00A1897E /* ForgotPasswordVC.swift */,
+				B04677D12274216A00A1897E /* ForgotPasswordViewController.xib */,
+				B011BCBA228D44E50075FDE3 /* HomeExplanation.swift */,
+				B011BCBB228D44E50075FDE3 /* HomeExplanation.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B006F0A3226DE3550016EEFD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B006F0B4226EDAF60016EEFD /* Model.swift */,
+				B00F085822706DEC00D1AE54 /* Category.swift */,
+				B00F085A22706E1300D1AE54 /* Number.swift */,
+				B00F085C22706E2500D1AE54 /* DataSet.swift */,
+				B050EDA72279036D005C8EE2 /* Chat.swift */,
+				B050EDA922790384005C8EE2 /* Comment.swift */,
+				B0B586A7227D646700DC03E5 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B00F082B227024FF00D1AE54 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B00F085222705B1700D1AE54 /* Constants.swift */,
+				B04677C4227405C700A1897E /* Extension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		C4C7496327EE41A40BB363E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B02EFA71DA3AD9B0D3604583 /* Pods_NewNumerology.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B006F07A226DDECB0016EEFD /* NewNumerology */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B006F08D226DDECB0016EEFD /* Build configuration list for PBXNativeTarget "NewNumerology" */;
+			buildPhases = (
+				23450B8C56B2CEF113E45FAB /* [CP] Check Pods Manifest.lock */,
+				B006F077226DDECB0016EEFD /* Sources */,
+				B006F078226DDECB0016EEFD /* Frameworks */,
+				B006F079226DDECB0016EEFD /* Resources */,
+				C1E5403651E1847A3B9ED976 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NewNumerology;
+			productName = NewNumerology;
+			productReference = B006F07B226DDECB0016EEFD /* NewNumerology.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B006F073226DDECB0016EEFD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Naoki Arakawa";
+				TargetAttributes = {
+					B006F07A226DDECB0016EEFD = {
+						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = B006F076226DDECB0016EEFD /* Build configuration list for PBXProject "NewNumerology" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B006F072226DDECB0016EEFD;
+			productRefGroup = B006F07C226DDECB0016EEFD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B006F07A226DDECB0016EEFD /* NewNumerology */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B006F079226DDECB0016EEFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B006F091226DDEEC0016EEFD /* Home.storyboard in Resources */,
+				B050EDA42278FB40005C8EE2 /* Message.storyboard in Resources */,
+				B011BCBD228D44E50075FDE3 /* HomeExplanation.xib in Resources */,
+				B006F093226DDF000016EEFD /* Numerology.storyboard in Resources */,
+				B046772D2272782600A1897E /* Login.storyboard in Resources */,
+				B006F097226DDF1C0016EEFD /* Setting.storyboard in Resources */,
+				B04677CB22740F4800A1897E /* GoogleService-Info.plist in Resources */,
+				B002BD07228AA8DD00B837D3 /* ForgotPWVC.xib in Resources */,
+				B050EDB2227A93FA005C8EE2 /* RomajiViewController.xib in Resources */,
+				B050EDB4227AC5D5005C8EE2 /* Assets.xcassets in Resources */,
+				B04677D32274216A00A1897E /* ForgotPasswordViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23450B8C56B2CEF113E45FAB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NewNumerology-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1E5403651E1847A3B9ED976 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NewNumerology/Pods-NewNumerology-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NewNumerology/Pods-NewNumerology-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NewNumerology/Pods-NewNumerology-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B006F077226DDECB0016EEFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B00F0855227068F600D1AE54 /* CategoryCell.swift in Sources */,
+				B006F0A7226EA0F80016EEFD /* SpiritualNum.swift in Sources */,
+				B006F09B226DDF900016EEFD /* NumerologyVC.swift in Sources */,
+				B011BCBC228D44E50075FDE3 /* HomeExplanation.swift in Sources */,
+				B006F0AF226EA1B60016EEFD /* Error.swift in Sources */,
+				B00F085922706DEC00D1AE54 /* Category.swift in Sources */,
+				B00F085D22706E2500D1AE54 /* DataSet.swift in Sources */,
+				B04677252271AFA200A1897E /* SelectNumberVC.swift in Sources */,
+				B050EDA82279036D005C8EE2 /* Chat.swift in Sources */,
+				B050ED9E2278F1E8005C8EE2 /* AddChatVC.swift in Sources */,
+				B050EDA02278F206005C8EE2 /* CommentsVC.swift in Sources */,
+				B006F07F226DDECB0016EEFD /* AppDelegate.swift in Sources */,
+				B006F09D226DDF9C0016EEFD /* FortuneTellingVC.swift in Sources */,
+				B046772B22724A9F00A1897E /* DetailsVC.swift in Sources */,
+				B050EDAE22790408005C8EE2 /* CommentCell.swift in Sources */,
+				B006F0B5226EDAF60016EEFD /* Model.swift in Sources */,
+				B046772F22727B0F00A1897E /* LoginVC.swift in Sources */,
+				B0B5869A227D2E1600DC03E5 /* SettingVC.swift in Sources */,
+				B00F085322705B1700D1AE54 /* Constants.swift in Sources */,
+				B006F0BB226F0E0C0016EEFD /* HomeCollectionCell.swift in Sources */,
+				B0B586A8227D646700DC03E5 /* User.swift in Sources */,
+				B006F0AD226EA1820016EEFD /* ResultVC.swift in Sources */,
+				B050ED9C2278E25E005C8EE2 /* MessageMainVC.swift in Sources */,
+				B04677BB2273E32A00A1897E /* NumericalInversion.swift in Sources */,
+				B04677292271C70D00A1897E /* SelectNumberCell.swift in Sources */,
+				B04677BF2273E57C00A1897E /* SoulNum.swift in Sources */,
+				B00F085B22706E1300D1AE54 /* Number.swift in Sources */,
+				B002BD06228AA8DD00B837D3 /* ForgotPWVC.swift in Sources */,
+				B006F0AB226EA1320016EEFD /* PersonalNum.swift in Sources */,
+				B04677C32274027E00A1897E /* DefineTabBar.swift in Sources */,
+				B00F088122715DB800D1AE54 /* ResultTableViewCell.swift in Sources */,
+				B04677D22274216A00A1897E /* ForgotPasswordVC.swift in Sources */,
+				B050EDAC227903E9005C8EE2 /* ChatCell.swift in Sources */,
+				B006F0A9226EA1150016EEFD /* DestinyNum.swift in Sources */,
+				B050EDA22278F220005C8EE2 /* UpdateCommentVC.swift in Sources */,
+				B006F099226DDF860016EEFD /* HomeVC.swift in Sources */,
+				B046773122727B2000A1897E /* RegisterVC.swift in Sources */,
+				B006F0A5226EA0C90016EEFD /* LifePassNum.swift in Sources */,
+				B050EDAA22790384005C8EE2 /* Comment.swift in Sources */,
+				B04677C5227405C700A1897E /* Extension.swift in Sources */,
+				B04677BD2273E50600A1897E /* BalanceNum.swift in Sources */,
+				B050EDB1227A93FA005C8EE2 /* RomajiViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B006F08B226DDECB0016EEFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B006F08C226DDECB0016EEFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B006F08E226DDECB0016EEFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C82B0E0DD7EBFA3B97951DB /* Pods-NewNumerology.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DVTF48299S;
+				INFOPLIST_FILE = NewNumerology/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.naokiarakawa.NewNumerology;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B006F08F226DDECB0016EEFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6BAFA85EB3377089566F7FB /* Pods-NewNumerology.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DVTF48299S;
+				INFOPLIST_FILE = NewNumerology/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.naokiarakawa.NewNumerology;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B006F076226DDECB0016EEFD /* Build configuration list for PBXProject "NewNumerology" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B006F08B226DDECB0016EEFD /* Debug */,
+				B006F08C226DDECB0016EEFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B006F08D226DDECB0016EEFD /* Build configuration list for PBXNativeTarget "NewNumerology" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B006F08E226DDECB0016EEFD /* Debug */,
+				B006F08F226DDECB0016EEFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B006F073226DDECB0016EEFD /* Project object */;
+}
