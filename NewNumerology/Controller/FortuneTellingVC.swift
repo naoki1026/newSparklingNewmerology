@@ -9,7 +9,6 @@
 import UIKit
 import ProgressHUD
 import RealmSwift
-import Firebase
 
 
 class FortuneTellingVC: UIViewController, UITextFieldDelegate {
@@ -40,15 +39,15 @@ class FortuneTellingVC: UIViewController, UITextFieldDelegate {
   let formatterMonth = DateFormatter()
   let formatterDay = DateFormatter()
   
-  private var users = [User]()
-  private var user : User!
-  
+//  private var users = [User]()
+//  private var user : User!
+//  
   //画面が読み込まれた瞬間に呼び出される
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    print("myNumberは")
-    print(myNumber)
+    nextButton.isEnabled = false
+    nextButton.backgroundColor = AppColors.inValidBlue
     
     headder.text = myNumber == 1 ? "自分の鑑定" : "鑑定"
     
@@ -56,10 +55,8 @@ class FortuneTellingVC: UIViewController, UITextFieldDelegate {
     self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : AppColors.naviPurple]
     
     fullName.keyboardType = UIKeyboardType.alphabet
-    
     dateField.addTarget(self, action: #selector(formaValidation), for: .allEvents)
     fullName.addTarget(self, action: #selector(formaValidation), for: .editingChanged)
-    
     headder.layer.cornerRadius = 5
     nextButton.layer.cornerRadius = 5
  
@@ -91,28 +88,23 @@ class FortuneTellingVC: UIViewController, UITextFieldDelegate {
     //ここはMMにしないとおかしい数字が表示されてしまうので注意
     formatterMonth.dateFormat = "MM"
     formatterDay.dateFormat = "dd"
-
   }
   
   // UIDatePickerのDoneを押したら発火
   @objc func done() {
-    
     dateField.endEditing(true)
     let formatter = DateFormatter()
     formatter.dateFormat = "yyyy年MM月dd日"
     dateField.text = "\(formatter.string(from: datePicker.date))"
     buttonFlag = 1
     checkValidation()
-    
   }
   
   @IBAction func button(_ sender: Any) {
-    
      fullNameText = fullName.text!
      year = String(formatterYear.string(from: datePicker.date))
      month = String(formatterMonth.string(from: datePicker.date))
      day = String(formatterDay.string(from: datePicker.date))
-    
     
     //各番号を出す
     let lifepassNumber = LifePassNum.calcLifePass(year: year, month: month, day: day)
@@ -121,8 +113,6 @@ class FortuneTellingVC: UIViewController, UITextFieldDelegate {
     let personalNumber = PersonalNum.calcPersonal(name: fullNameText)
     let spiritualNumber = SpiritualNum.calcSpiritual(year: year, month: month, day: year)
     let balanceNumber = BalanceNum.calcBalance(year: year, month: month, day: day)
-
-    
     let result = FortuneTellingResult()
     
     result.myNumber = myNumber == 1 ? 1 : 0
@@ -136,32 +126,16 @@ class FortuneTellingVC: UIViewController, UITextFieldDelegate {
     result.balance = balanceNumber
     result.personal = personalNumber
     result.lastUpdate = Int(NSDate().timeIntervalSince1970)
-    
-    if myNumber == 1 {
-      
-      print("書き込み開始")
-      
-      guard let userId = Auth.auth().currentUser?.uid else {return}
-      Firestore.firestore().document("users/\(userId)").updateData(["number" : lifepassNumber])
-      
-    }
-    
-    
+
     do {
-      
       let realm = try Realm()
       try realm.write {
         realm.add(result)
       }
-      
     } catch {
-      
       print("Error")
-      
     }
-      
     let resultViewController : ResultVC = self.storyboard?.instantiateViewController(withIdentifier : "Result") as! ResultVC
-      
     resultViewController.resultLifepass = lifepassNumber
     resultViewController.resultSoul = soulNumber
     resultViewController.resultSpiritual = spiritualNumber
@@ -171,92 +145,57 @@ class FortuneTellingVC: UIViewController, UITextFieldDelegate {
     resultViewController.resultName = fullNameText
     resultViewController.resultBirthday = dateField.text!
     resultViewController.myNumber = myNumber
-    
     self.navigationController?.pushViewController(resultViewController, animated: true)
-    
    }
-  
   @objc func formaValidation () {
-    
    checkValidation()
-    
   }
-  
   func checkValidation(){
-    
     guard dateField.hasText, fullName.hasText else {
-      
       //入力内容を満たしていない場合
       nextButton.isEnabled = false
       nextButton.backgroundColor = AppColors.inValidBlue
       return
     }
-    
     //正しく入力されている場合
     nextButton.isEnabled = true
     nextButton.backgroundColor =  AppColors.validBlue
     return
-    
   }
-  
-  
   @IBAction func clickedButton(_ sender: Any) {
-    
-    
     let vc = RomajiViewController()
-    
     //どのように画面に遷移するか
     vc.modalTransitionStyle = .crossDissolve
     vc.modalPresentationStyle = .overCurrentContext
     present(vc, animated: true, completion: nil)
-    
-    
   }
 }
-
 //アルファベット以外入力できない
 extension FortuneTellingVC {
-  
   func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-    
     do {
-      
       let regex = try NSRegularExpression(pattern: ".*[^A-Za-z ].*", options: [])
-      
       if regex.firstMatch(in: string, options: [], range: NSMakeRange(0, string.count)) != nil {
         ProgressHUD.showError("ローマ字で入力してください")
         fullName.text = ""
-        
       }
     }
-      
     catch {
       print("ERROR")
-      
     }
-    
     return true
-    
   }
 }
-
 extension FortuneTellingVC {
-  
   //空いているところをクリックした時にキーボードを閉じる
   override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-    
     fullName.resignFirstResponder()
   }
-  
   //リターンキーをクリックした時にキーボードを閉じる
   func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-    
     //キーボードを閉じる
     textField.resignFirstResponder()
-    
     return true
-    
   }
-  
 }
 

@@ -8,7 +8,6 @@
 
 import UIKit
 import ChameleonFramework
-import FirebaseAuth
 
 class NumerologyVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
   

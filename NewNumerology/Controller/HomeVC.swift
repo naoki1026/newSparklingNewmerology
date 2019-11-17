@@ -9,7 +9,6 @@
 import UIKit
 import RealmSwift
 import ChameleonFramework
-import Firebase
 import ProgressHUD
 
 class HomeVC: UIViewController {
@@ -37,17 +36,11 @@ class HomeVC: UIViewController {
     if userDefault.bool(forKey: "firstLaunch") {
       userDefault.set(false, forKey: "firstLaunch")
       homeExplanation()
-      
     }
-    
         myResult = realm.objects(FortuneTellingResult.self).filter("myNumber == 1")
         results = realm.objects(FortuneTellingResult.self).filter("myNumber == 0")
         results = results.sorted(byKeyPath: "lastUpdate", ascending: false)
-    
         self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: AppColors.naviPurple]
-    
-   
-
     }
   
   override func viewWillAppear(_ animated: Bool) {
@@ -71,29 +64,6 @@ class HomeVC: UIViewController {
     
     tableView.reloadData()
   
-  }
-  
-  @IBAction func pushLogout(_ sender: Any) {
-    
-    do {
-      //サインアウトを試みる
-      try Auth.auth().signOut()
-
-
-      print("Successfully logged user out")
-      //let viewController = UIViewController() as! LoginViewController
-      let appDelegate = UIApplication.shared.delegate as! AppDelegate
-      // appDelegate.window?.rootViewController = viewController
-      
-      let storyboard = UIStoryboard(name: "Login", bundle: Bundle(for: type(of: self)))
-      appDelegate.window?.rootViewController = storyboard.instantiateInitialViewController()
-      
-    } catch {
-      
-      //handle error
-      print("Falied to sign out")
-      
-    }
   }
   
   func homeExplanation(){
@@ -163,15 +133,12 @@ extension HomeVC:  UITableViewDelegate, UITableViewDataSource {
         cell.name.font = UIFont.systemFont(ofSize: 14)
         cell.lifepassNumber.text = ""
         cell.view.layer.backgroundColor = UIColor.white.cgColor
-        
-        
       } else {
-        
         cell.name.text = myResult[indexPath.row].fullName
         cell.lifepassNumber.text = String(myResult[indexPath.row].lifepass)
         cell.view.layer.cornerRadius = 25
         cell.name.font = UIFont.systemFont(ofSize: 17)
-    
+        
     switch  myResult[indexPath.row].lifepass {
       
     case 1: cell.view.layer.backgroundColor = AppColors.red.cgColor
@@ -290,14 +257,12 @@ extension HomeVC:  UITableViewDelegate, UITableViewDataSource {
        let fortuneTellingVC : FortuneTellingVC = self.storyboard?.instantiateViewController(withIdentifier : "Fortune") as! FortuneTellingVC
       
       fortuneTellingVC.myNumber = 1
-      print("この分岐")
       
        self.navigationController?.pushViewController(fortuneTellingVC, animated: true)
       
         } else {
           
           let resultVC : ResultVC = self.storyboard?.instantiateViewController(withIdentifier : "Result") as! ResultVC
-          
           resultVC.resultLifepass = myResult[indexPath.row].lifepass
           resultVC.resultSoul = myResult[indexPath.row].soul
           resultVC.resultSpiritual = myResult[indexPath.row].spiritual
@@ -306,15 +271,10 @@ extension HomeVC:  UITableViewDelegate, UITableViewDataSource {
           resultVC.resultBalance = myResult[indexPath.row].balance
           resultVC.resultName = myResult[indexPath.row].fullName
           resultVC.resultBirthday = myResult[indexPath.row].birthday
-          
           self.navigationController?.pushViewController(resultVC, animated: true)
-          
       }
-          
     } else {
-      
     let resultVC : ResultVC = self.storyboard?.instantiateViewController(withIdentifier : "Result") as! ResultVC
-    
     resultVC.resultLifepass = results[indexPath.row].lifepass
     resultVC.resultSoul = results[indexPath.row].soul
     resultVC.resultSpiritual = results[indexPath.row].spiritual
@@ -323,63 +283,36 @@ extension HomeVC:  UITableViewDelegate, UITableViewDataSource {
     resultVC.resultBalance = results[indexPath.row].balance
     resultVC.resultName = results[indexPath.row].fullName
     resultVC.resultBirthday = results[indexPath.row].birthday
-    
     self.navigationController?.pushViewController(resultVC, animated: true)
-    
     }
   }
-  
   func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
     if editingStyle == .delete {
       
       if indexPath.section == 0 {
         if myResult.count == 0 {
-          
           ProgressHUD.showError("ナンバーが登録されていないため削除することができません")
-  
           return
-          
         } else {
-        
           if let categoryForDeletion = self.myResult?[indexPath.row] {
-            
             do {
-              
               try self.realm.write {
-                
                 self.realm.delete(categoryForDeletion) }
-              
             } catch {
-              
               print("Error deleting category, \(error)")
-              
             }
-            
             tableView.reloadData()
-            
           }
         }
-
-        
       } else {
-        
-      
       if let categoryForDeletion = self.results?[indexPath.row] {
-        
         do {
-          
           try self.realm.write {
-            
             self.realm.delete(categoryForDeletion) }
-          
         } catch {
-          
           print("Error deleting category, \(error)")
-          
         }
-        
         tableView.reloadData()
-        
        }
       }
     }

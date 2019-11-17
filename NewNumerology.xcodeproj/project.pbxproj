@@ -41,13 +41,10 @@
 		B04677C32274027E00A1897E /* DefineTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04677C22274027E00A1897E /* DefineTabBar.swift */; };
 		B04677C5227405C700A1897E /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04677C4227405C700A1897E /* Extension.swift */; };
 		B04677CB22740F4800A1897E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B04677CA22740F4700A1897E /* GoogleService-Info.plist */; };
-		B050EDAA22790384005C8EE2 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B050EDA922790384005C8EE2 /* Comment.swift */; };
-		B050EDAE22790408005C8EE2 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B050EDAD22790408005C8EE2 /* CommentCell.swift */; };
 		B050EDB1227A93FA005C8EE2 /* RomajiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B050EDAF227A93FA005C8EE2 /* RomajiViewController.swift */; };
 		B050EDB2227A93FA005C8EE2 /* RomajiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B050EDB0227A93FA005C8EE2 /* RomajiViewController.xib */; };
 		B050EDB4227AC5D5005C8EE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B050EDB3227AC5D5005C8EE2 /* Assets.xcassets */; };
 		B0B5869A227D2E1600DC03E5 /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B58699227D2E1600DC03E5 /* SettingVC.swift */; };
-		B0B586A8227D646700DC03E5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B586A7227D646700DC03E5 /* User.swift */; };
 		FDEEDDD8333210F1DE31993E /* Pods_NewNumerology.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B02EFA71DA3AD9B0D3604583 /* Pods_NewNumerology.framework */; };
 /* End PBXBuildFile section */
 
@@ -90,13 +87,10 @@
 		B04677C22274027E00A1897E /* DefineTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefineTabBar.swift; sourceTree = "<group>"; };
 		B04677C4227405C700A1897E /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		B04677CA22740F4700A1897E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		B050EDA922790384005C8EE2 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
-		B050EDAD22790408005C8EE2 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		B050EDAF227A93FA005C8EE2 /* RomajiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RomajiViewController.swift; sourceTree = "<group>"; };
 		B050EDB0227A93FA005C8EE2 /* RomajiViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RomajiViewController.xib; sourceTree = "<group>"; };
 		B050EDB3227AC5D5005C8EE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0B58699227D2E1600DC03E5 /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
-		B0B586A7227D646700DC03E5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B6BAFA85EB3377089566F7FB /* Pods-NewNumerology.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewNumerology.release.xcconfig"; path = "Pods/Target Support Files/Pods-NewNumerology/Pods-NewNumerology.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -199,7 +193,6 @@
 				B04677282271C70D00A1897E /* SelectNumberCell.swift */,
 				B050EDAF227A93FA005C8EE2 /* RomajiViewController.swift */,
 				B050EDB0227A93FA005C8EE2 /* RomajiViewController.xib */,
-				B050EDAD22790408005C8EE2 /* CommentCell.swift */,
 				B011BCBA228D44E50075FDE3 /* HomeExplanation.swift */,
 				B011BCBB228D44E50075FDE3 /* HomeExplanation.xib */,
 			);
@@ -213,8 +206,6 @@
 				B00F085822706DEC00D1AE54 /* Category.swift */,
 				B00F085A22706E1300D1AE54 /* Number.swift */,
 				B00F085C22706E2500D1AE54 /* DataSet.swift */,
-				B050EDA922790384005C8EE2 /* Comment.swift */,
-				B0B586A7227D646700DC03E5 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -372,13 +363,11 @@
 				B006F07F226DDECB0016EEFD /* AppDelegate.swift in Sources */,
 				B006F09D226DDF9C0016EEFD /* FortuneTellingVC.swift in Sources */,
 				B046772B22724A9F00A1897E /* DetailsVC.swift in Sources */,
-				B050EDAE22790408005C8EE2 /* CommentCell.swift in Sources */,
 				B006F0B5226EDAF60016EEFD /* Model.swift in Sources */,
 				B046772F22727B0F00A1897E /* LoginVC.swift in Sources */,
 				B0B5869A227D2E1600DC03E5 /* SettingVC.swift in Sources */,
 				B00F085322705B1700D1AE54 /* Constants.swift in Sources */,
 				B006F0BB226F0E0C0016EEFD /* HomeCollectionCell.swift in Sources */,
-				B0B586A8227D646700DC03E5 /* User.swift in Sources */,
 				B006F0AD226EA1820016EEFD /* ResultVC.swift in Sources */,
 				B04677BB2273E32A00A1897E /* NumericalInversion.swift in Sources */,
 				B04677292271C70D00A1897E /* SelectNumberCell.swift in Sources */,
@@ -390,7 +379,6 @@
 				B006F0A9226EA1150016EEFD /* DestinyNum.swift in Sources */,
 				B006F099226DDF860016EEFD /* HomeVC.swift in Sources */,
 				B006F0A5226EA0C90016EEFD /* LifePassNum.swift in Sources */,
-				B050EDAA22790384005C8EE2 /* Comment.swift in Sources */,
 				B04677C5227405C700A1897E /* Extension.swift in Sources */,
 				B04677BD2273E50600A1897E /* BalanceNum.swift in Sources */,
 				B050EDB1227A93FA005C8EE2 /* RomajiViewController.swift in Sources */,
