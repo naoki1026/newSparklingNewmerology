@@ -23,6 +23,7 @@ struct AppColors {
   static let silver = UIColor(red: 192/255, green: 192/255, blue: 192/255, alpha: 1.0)
   static let gold = UIColor(red: 207/255, green: 170/255, blue: 77/255, alpha: 1.0)
   static let navGold = UIColor(red: 153/255, green: 102/255, blue: 0/255, alpha: 1.0)
+  static let naviPurple = UIColor(red: 83/255, green: 27/255, blue: 147/255, alpha: 1.0)
   static let inValidBlue = UIColor(red: 149/255, green: 204/255, blue: 244/255, alpha: 1)
   static let validBlue = UIColor(red: 17/255, green: 154/255, blue: 237/255, alpha: 1)
   static let white = UIColor.white

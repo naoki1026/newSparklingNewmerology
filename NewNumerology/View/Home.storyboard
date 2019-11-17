@@ -108,7 +108,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="ホーム" id="knL-sV-kLW">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="fortuneTelling_gold" id="fJU-Qa-ITk">
-                            <color key="tintColor" red="0.59999999999999998" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="tHf-bb-oeV" kind="show" id="Lpb-gZ-mwn"/>
                             </connections>
@@ -354,7 +354,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GX7-xf-N62" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2340" y="179"/>
+            <point key="canvasLocation" x="2454" y="154"/>
         </scene>
     </scenes>
     <resources>
@@ -362,6 +362,6 @@
         <image name="smallRainbow" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="MbK-Y3-1Wj"/>
+        <segue reference="gSg-zO-VdL"/>
     </inferredMetricsTieBreakers>
 </document>

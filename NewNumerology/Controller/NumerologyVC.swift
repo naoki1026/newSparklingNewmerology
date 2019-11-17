@@ -25,8 +25,8 @@ class NumerologyVC: UIViewController, UITableViewDelegate, UITableViewDataSource
     override func viewDidLoad() {
         super.viewDidLoad()
       
-      navigationController?.navigationBar.tintColor = AppColors.navGold
-      navigationController?.navigationBar.titleTextAttributes = [.foregroundColor:  AppColors.navGold]
+      navigationController?.navigationBar.tintColor = AppColors.naviPurple
+      navigationController?.navigationBar.titleTextAttributes = [.foregroundColor:  AppColors.naviPurple]
       navigationItem.title = "ナンバーについて"
       
       tableView.delegate = self

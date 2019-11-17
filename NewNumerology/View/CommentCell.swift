@@ -47,11 +47,6 @@ class CommentCell: UITableViewCell {
       optionsMenu.isHidden = false
       let tap = UITapGestureRecognizer(target: self, action: #selector(commentOptionsTapped))
       optionsMenu.addGestureRecognizer(tap)
-//      usernameTxt.textColor = AppColors.navGold
-//      timestampTxt.textColor = AppColors.navGold
-//      commentTxt.textColor = AppColors.navGold
-      
-      
     }
   }
   

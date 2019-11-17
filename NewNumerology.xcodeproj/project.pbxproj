@@ -46,7 +46,6 @@
 		B04677CB22740F4800A1897E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B04677CA22740F4700A1897E /* GoogleService-Info.plist */; };
 		B04677D22274216A00A1897E /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04677D02274216A00A1897E /* ForgotPasswordVC.swift */; };
 		B04677D32274216A00A1897E /* ForgotPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B04677D12274216A00A1897E /* ForgotPasswordViewController.xib */; };
-		B050EDA42278FB40005C8EE2 /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B050EDA32278FB40005C8EE2 /* Message.storyboard */; };
 		B050EDAA22790384005C8EE2 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B050EDA922790384005C8EE2 /* Comment.swift */; };
 		B050EDAE22790408005C8EE2 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B050EDAD22790408005C8EE2 /* CommentCell.swift */; };
 		B050EDB1227A93FA005C8EE2 /* RomajiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B050EDAF227A93FA005C8EE2 /* RomajiViewController.swift */; };
@@ -101,7 +100,6 @@
 		B04677CA22740F4700A1897E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B04677D02274216A00A1897E /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
 		B04677D12274216A00A1897E /* ForgotPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotPasswordViewController.xib; sourceTree = "<group>"; };
-		B050EDA32278FB40005C8EE2 /* Message.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Message.storyboard; sourceTree = "<group>"; };
 		B050EDA922790384005C8EE2 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		B050EDAD22790408005C8EE2 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		B050EDAF227A93FA005C8EE2 /* RomajiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RomajiViewController.swift; sourceTree = "<group>"; };
@@ -205,7 +203,6 @@
 				B046772C2272782600A1897E /* Login.storyboard */,
 				B006F090226DDEEC0016EEFD /* Home.storyboard */,
 				B006F092226DDF000016EEFD /* Numerology.storyboard */,
-				B050EDA32278FB40005C8EE2 /* Message.storyboard */,
 				B006F096226DDF1C0016EEFD /* Setting.storyboard */,
 				B006F0BA226F0E0C0016EEFD /* HomeCollectionCell.swift */,
 				B00F088022715DB800D1AE54 /* ResultTableViewCell.swift */,
@@ -320,7 +317,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B006F091226DDEEC0016EEFD /* Home.storyboard in Resources */,
-				B050EDA42278FB40005C8EE2 /* Message.storyboard in Resources */,
 				B011BCBD228D44E50075FDE3 /* HomeExplanation.xib in Resources */,
 				B006F093226DDF000016EEFD /* Numerology.storyboard in Resources */,
 				B046772D2272782600A1897E /* Login.storyboard in Resources */,
@@ -548,7 +544,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DVTF48299S;
 				INFOPLIST_FILE = NewNumerology/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -568,7 +564,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DVTF48299S;
 				INFOPLIST_FILE = NewNumerology/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

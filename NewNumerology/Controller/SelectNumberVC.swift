@@ -29,8 +29,8 @@ class SelectNumberVC: UIViewController, UICollectionViewDelegate, UICollectionVi
       collectionView.dataSource = self
       collectionView.isScrollEnabled = false
       
-      navigationController?.navigationBar.tintColor = AppColors.navGold
-      navigationController?.navigationBar.titleTextAttributes = [.foregroundColor:  AppColors.navGold]
+      navigationController?.navigationBar.tintColor = AppColors.naviPurple
+      navigationController?.navigationBar.titleTextAttributes = [.foregroundColor:  AppColors.naviPurple]
       navigationItem.title = selectedCategory
       
     }

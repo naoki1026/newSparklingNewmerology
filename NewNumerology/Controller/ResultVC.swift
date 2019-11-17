@@ -49,8 +49,8 @@ class ResultVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UI
     tableView.isScrollEnabled = false
     navigationController?.delegate = self
     
-    self.navigationController?.navigationBar.tintColor = AppColors.navGold
-    self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : AppColors.navGold]
+    self.navigationController?.navigationBar.tintColor = AppColors.naviPurple
+    self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : AppColors.naviPurple]
     
     imageColor()
     

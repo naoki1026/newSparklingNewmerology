@@ -52,8 +52,8 @@ class FortuneTellingVC: UIViewController, UITextFieldDelegate {
     
     headder.text = myNumber == 1 ? "自分の鑑定" : "鑑定"
     
-    self.navigationController?.navigationBar.tintColor = AppColors.navGold
-    self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : AppColors.navGold]
+    self.navigationController?.navigationBar.tintColor = AppColors.naviPurple
+    self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : AppColors.naviPurple]
     
     fullName.keyboardType = UIKeyboardType.alphabet
     

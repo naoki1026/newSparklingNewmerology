@@ -21,8 +21,8 @@ class DetailsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
       
-      navigationController?.navigationBar.tintColor = AppColors.navGold
-      navigationController?.navigationBar.titleTextAttributes = [.foregroundColor:  AppColors.navGold]
+      navigationController?.navigationBar.tintColor = AppColors.naviPurple
+      navigationController?.navigationBar.titleTextAttributes = [.foregroundColor:  AppColors.naviPurple]
      navigationItem.title = navigationTitle
       
       number.text = String(categoryToPass.title)

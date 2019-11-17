@@ -44,7 +44,7 @@ class HomeVC: UIViewController {
         results = realm.objects(FortuneTellingResult.self).filter("myNumber == 0")
         results = results.sorted(byKeyPath: "lastUpdate", ascending: false)
     
-        self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: AppColors.navGold]
+        self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: AppColors.naviPurple]
     
    
 
@@ -125,7 +125,7 @@ extension HomeVC:  UITableViewDelegate, UITableViewDataSource {
 
   func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
 
-    view.tintColor = AppColors.navGold
+    view.tintColor = AppColors.naviPurple
 
     let header = view as! UITableViewHeaderFooterView
 
