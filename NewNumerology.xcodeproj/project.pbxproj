@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		63937BF9238931F800D3B410 /* HomeTableViewTodayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63937BF8238931F800D3B410 /* HomeTableViewTodayCell.swift */; };
 		B006F07F226DDECB0016EEFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B006F07E226DDECB0016EEFD /* AppDelegate.swift */; };
 		B006F091226DDEEC0016EEFD /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B006F090226DDEEC0016EEFD /* Home.storyboard */; };
 		B006F093226DDF000016EEFD /* Numerology.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B006F092226DDF000016EEFD /* Numerology.storyboard */; };
@@ -22,7 +21,7 @@
 		B006F0AD226EA1820016EEFD /* ResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B006F0AC226EA1820016EEFD /* ResultVC.swift */; };
 		B006F0AF226EA1B60016EEFD /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = B006F0AE226EA1B60016EEFD /* Error.swift */; };
 		B006F0B5226EDAF60016EEFD /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B006F0B4226EDAF60016EEFD /* Model.swift */; };
-		B006F0BB226F0E0C0016EEFD /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B006F0BA226F0E0C0016EEFD /* HomeTableViewCell.swift */; };
+		B006F0BB226F0E0C0016EEFD /* HomeCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B006F0BA226F0E0C0016EEFD /* HomeCollectionCell.swift */; };
 		B00F085322705B1700D1AE54 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00F085222705B1700D1AE54 /* Constants.swift */; };
 		B00F0855227068F600D1AE54 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00F0854227068F600D1AE54 /* CategoryCell.swift */; };
 		B00F085922706DEC00D1AE54 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00F085822706DEC00D1AE54 /* Category.swift */; };
@@ -51,7 +50,6 @@
 
 /* Begin PBXFileReference section */
 		1C82B0E0DD7EBFA3B97951DB /* Pods-NewNumerology.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewNumerology.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NewNumerology/Pods-NewNumerology.debug.xcconfig"; sourceTree = "<group>"; };
-		63937BF8238931F800D3B410 /* HomeTableViewTodayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewTodayCell.swift; sourceTree = "<group>"; };
 		B006F07B226DDECB0016EEFD /* SP Numerology.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SP Numerology.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B006F07E226DDECB0016EEFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B006F08A226DDECB0016EEFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -68,7 +66,7 @@
 		B006F0AC226EA1820016EEFD /* ResultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultVC.swift; sourceTree = "<group>"; };
 		B006F0AE226EA1B60016EEFD /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		B006F0B4226EDAF60016EEFD /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		B006F0BA226F0E0C0016EEFD /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		B006F0BA226F0E0C0016EEFD /* HomeCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionCell.swift; sourceTree = "<group>"; };
 		B00F085222705B1700D1AE54 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B00F0854227068F600D1AE54 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		B00F085822706DEC00D1AE54 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
@@ -189,7 +187,7 @@
 				B006F090226DDEEC0016EEFD /* Home.storyboard */,
 				B006F092226DDF000016EEFD /* Numerology.storyboard */,
 				B006F096226DDF1C0016EEFD /* Setting.storyboard */,
-				B006F0BA226F0E0C0016EEFD /* HomeTableViewCell.swift */,
+				B006F0BA226F0E0C0016EEFD /* HomeCollectionCell.swift */,
 				B00F088022715DB800D1AE54 /* ResultTableViewCell.swift */,
 				B00F0854227068F600D1AE54 /* CategoryCell.swift */,
 				B04677282271C70D00A1897E /* SelectNumberCell.swift */,
@@ -197,7 +195,6 @@
 				B050EDB0227A93FA005C8EE2 /* RomajiViewController.xib */,
 				B011BCBA228D44E50075FDE3 /* HomeExplanation.swift */,
 				B011BCBB228D44E50075FDE3 /* HomeExplanation.xib */,
-				63937BF8238931F800D3B410 /* HomeTableViewTodayCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -370,7 +367,7 @@
 				B046772F22727B0F00A1897E /* Launch.swift in Sources */,
 				B0B5869A227D2E1600DC03E5 /* SettingVC.swift in Sources */,
 				B00F085322705B1700D1AE54 /* Constants.swift in Sources */,
-				B006F0BB226F0E0C0016EEFD /* HomeTableViewCell.swift in Sources */,
+				B006F0BB226F0E0C0016EEFD /* HomeCollectionCell.swift in Sources */,
 				B006F0AD226EA1820016EEFD /* ResultVC.swift in Sources */,
 				B04677BB2273E32A00A1897E /* NumericalInversion.swift in Sources */,
 				B04677292271C70D00A1897E /* SelectNumberCell.swift in Sources */,
@@ -378,7 +375,6 @@
 				B00F085B22706E1300D1AE54 /* Number.swift in Sources */,
 				B006F0AB226EA1320016EEFD /* PersonalNum.swift in Sources */,
 				B04677C32274027E00A1897E /* DefineTabBar.swift in Sources */,
-				63937BF9238931F800D3B410 /* HomeTableViewTodayCell.swift in Sources */,
 				B00F088122715DB800D1AE54 /* ResultTableViewCell.swift in Sources */,
 				B006F0A9226EA1150016EEFD /* DestinyNum.swift in Sources */,
 				B006F099226DDF860016EEFD /* HomeVC.swift in Sources */,

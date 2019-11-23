@@ -28,8 +28,8 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="数秘術鑑定士 naho監修" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTR-8h-OHQ">
                                 <rect key="frame" x="57" y="387" width="261" height="29"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="29" id="OVU-T8-kS5"/>
-                                    <constraint firstAttribute="width" constant="261" id="fuw-Wg-AW1"/>
+                                    <constraint firstAttribute="height" constant="29" id="9uN-Le-8yd"/>
+                                    <constraint firstAttribute="width" constant="261" id="q5j-xt-A3Z"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -49,11 +49,11 @@
                         <color key="backgroundColor" red="0.55294117649999996" green="0.42352941179999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="E1u-sc-s6o" firstAttribute="centerX" secondItem="GFN-cP-gRM" secondAttribute="centerX" id="7vM-Iu-xzi"/>
-                            <constraint firstItem="c3y-N4-is1" firstAttribute="bottom" secondItem="xTR-8h-OHQ" secondAttribute="bottom" constant="251" id="EeE-05-WFK"/>
-                            <constraint firstItem="xTR-8h-OHQ" firstAttribute="centerX" secondItem="GFN-cP-gRM" secondAttribute="centerX" id="Kjy-UD-7yc"/>
+                            <constraint firstItem="xTR-8h-OHQ" firstAttribute="top" secondItem="E1u-sc-s6o" secondAttribute="bottom" constant="120.5" id="W0p-Vx-dTn"/>
                             <constraint firstItem="E1u-sc-s6o" firstAttribute="top" secondItem="SB3-Ka-9PV" secondAttribute="bottom" constant="5" id="YnW-JC-VKn"/>
                             <constraint firstItem="SB3-Ka-9PV" firstAttribute="centerX" secondItem="GFN-cP-gRM" secondAttribute="centerX" id="ap1-pO-dCH"/>
                             <constraint firstItem="SB3-Ka-9PV" firstAttribute="top" secondItem="c3y-N4-is1" secondAttribute="top" constant="150" id="f1l-cV-TB8"/>
+                            <constraint firstItem="xTR-8h-OHQ" firstAttribute="centerX" secondItem="GFN-cP-gRM" secondAttribute="centerX" id="rEG-gi-i7H"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="c3y-N4-is1"/>
                     </view>
