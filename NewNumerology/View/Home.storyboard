@@ -96,12 +96,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="c4w-oN-p84" firstAttribute="top" secondItem="IKy-4G-xPs" secondAttribute="top" id="12D-q5-zPv"/>
-                            <constraint firstItem="oq7-lw-B94" firstAttribute="top" secondItem="c4w-oN-p84" secondAttribute="bottom" constant="5" id="5Py-ll-5T7"/>
+                            <constraint firstItem="oq7-lw-B94" firstAttribute="trailing" secondItem="IKy-4G-xPs" secondAttribute="trailing" id="7LV-fQ-gZL"/>
                             <constraint firstItem="c4w-oN-p84" firstAttribute="leading" secondItem="IKy-4G-xPs" secondAttribute="leading" id="805-x8-8K3"/>
-                            <constraint firstItem="oq7-lw-B94" firstAttribute="trailing" secondItem="IKy-4G-xPs" secondAttribute="trailing" id="HkW-KI-t11"/>
-                            <constraint firstItem="oq7-lw-B94" firstAttribute="leading" secondItem="IKy-4G-xPs" secondAttribute="leading" id="PKP-Pb-dC9"/>
+                            <constraint firstItem="oq7-lw-B94" firstAttribute="bottom" secondItem="IKy-4G-xPs" secondAttribute="bottom" id="Lki-Ge-cgR"/>
+                            <constraint firstItem="oq7-lw-B94" firstAttribute="top" secondItem="c4w-oN-p84" secondAttribute="bottom" constant="5" id="PkZ-uh-z6D"/>
                             <constraint firstItem="c4w-oN-p84" firstAttribute="trailing" secondItem="IKy-4G-xPs" secondAttribute="trailing" id="gIi-Cr-4Ha"/>
-                            <constraint firstItem="oq7-lw-B94" firstAttribute="bottom" secondItem="IKy-4G-xPs" secondAttribute="bottom" id="qgG-LG-G9T"/>
+                            <constraint firstItem="oq7-lw-B94" firstAttribute="leading" secondItem="IKy-4G-xPs" secondAttribute="leading" id="gyE-1G-Ne0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IKy-4G-xPs"/>
                     </view>
@@ -120,7 +120,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ije-EL-J01" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1617" y="179"/>
+            <point key="canvasLocation" x="1616.8" y="178.56071964017991"/>
         </scene>
         <!--ResultVC-->
         <scene sceneID="ViL-v2-2TW">
@@ -267,11 +267,6 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
-                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="名前を入力（ローマ字）" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jeh-Gu-Kkz">
                                 <rect key="frame" x="24" y="184" width="327" height="40"/>
@@ -282,11 +277,6 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
-                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="鑑定" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ogl-IO-PmR">
                                 <rect key="frame" x="12" y="74" width="351" height="40"/>

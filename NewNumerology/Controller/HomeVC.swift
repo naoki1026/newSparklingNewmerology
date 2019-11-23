@@ -15,20 +15,20 @@ class HomeVC: UIViewController {
   
 
   @IBOutlet weak var tableView: UITableView!
-  
+  @IBOutlet weak var tableViewToday: UITableView!
+    
   //MARK: -Properties
   let realm = try! Realm()
   var myResult : Results<FortuneTellingResult>!
   var results : Results<FortuneTellingResult>!
   
   //MARK: -Init
-  
   override func viewDidLoad() {
         super.viewDidLoad()
     
         tableView.delegate = self
         tableView.dataSource = self
-    
+
     let userDefault = UserDefaults.standard
     let dict = ["firstLaunch": true]
     userDefault.register(defaults: dict)
@@ -44,89 +44,58 @@ class HomeVC: UIViewController {
     }
   
   override func viewWillAppear(_ animated: Bool) {
-    
     tableView.reloadData()
-
   }
   
  //MARK: -Helpers
-  
   @IBAction func selectedTab(_ sender: UISegmentedControl) {
-    
     switch sender.selectedSegmentIndex {
-      
     case 0: results = results.sorted(byKeyPath: "lastUpdate", ascending: false)
     case 1: results = results.sorted(byKeyPath: "lifepass", ascending: true)
     case 2: results = results.sorted(byKeyPath: "fullName", ascending: true)
     default: return
-    
   }
-    
     tableView.reloadData()
-  
   }
   
   func homeExplanation(){
-    
     let vc = HomeExplanation()
-    
     //どのように画面に遷移するか
     vc.modalTransitionStyle = .crossDissolve
     vc.modalPresentationStyle = .overCurrentContext
     present(vc, animated: true, completion: nil)
-    
   }
-  
 }
 
 extension HomeVC:  UITableViewDelegate, UITableViewDataSource {
-  
   func numberOfSections(in tableView: UITableView) -> Int {
-
     return 2
-
   }
 
   func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-
     return section == 0 ? "" : "鑑定結果（自分以外)"
-
   }
 
   func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
-
     view.tintColor = AppColors.naviPurple
-
     let header = view as! UITableViewHeaderFooterView
-
     header.textLabel?.textColor = .white
     header.textLabel?.font = UIFont.systemFont(ofSize: 13)
-
   }
 
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    
-
     if section == 0 {
-
     return 1;
-
     } else {
-
     return results.count;
-      
     }
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    
     let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! HomeTableViewCell
-    
     if indexPath.section == 0 {
-      
       if myResult.count < 1 {
-        
-        cell.name.text = "左の虫眼鏡をクリックして、\n自分のナンバーを登録してください"
+        cell.name.text = "ここをクリックして、\n自分のナンバーを登録してください"
         cell.rainbowImageView.image = UIImage(named: "glass_small")
         cell.rainbowImageView.alpha = 1
         cell.view.layer.cornerRadius = 25
@@ -237,6 +206,8 @@ extension HomeVC:  UITableViewDelegate, UITableViewDataSource {
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
     return 60
   }
+    
+    
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     tableView.deselectRow(at: indexPath, animated: true)
     if indexPath.section == 0 {
@@ -269,6 +240,8 @@ extension HomeVC:  UITableViewDelegate, UITableViewDataSource {
     self.navigationController?.pushViewController(resultVC, animated: true)
     }
   }
+    
+    
   func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
     if editingStyle == .delete {
       
@@ -300,5 +273,9 @@ extension HomeVC:  UITableViewDelegate, UITableViewDataSource {
       }
     }
   }
+    func tableViewToday(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let today = tableView.dequeueReusableCell(withIdentifier: "today", for: indexPath) as! HomeTableViewTodayCell
+    return today
+    }
 }
 
