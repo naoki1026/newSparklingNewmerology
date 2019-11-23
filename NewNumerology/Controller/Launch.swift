@@ -9,7 +9,7 @@
 import UIKit
 import Pastel
 
-class LoginVC: UIViewController {
+class Launch: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()

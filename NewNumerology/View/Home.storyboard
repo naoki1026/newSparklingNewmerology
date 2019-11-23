@@ -10,7 +10,7 @@
         <!--ホーム-->
         <scene sceneID="qyK-zy-pdZ">
             <objects>
-                <viewController storyboardIdentifier="Home" id="Yhc-wl-Y0L" customClass="HomeVC" customModule="NewNumerology" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Home" id="Yhc-wl-Y0L" customClass="HomeVC" customModule="SP_Numerology" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8zb-pP-lzP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -20,7 +20,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" rowHeight="60" id="sDj-aL-auD" customClass="HomeTableViewCell" customModule="NewNumerology" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" rowHeight="60" id="sDj-aL-auD" customClass="HomeTableViewCell" customModule="SP_Numerology" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sDj-aL-auD" id="A22-th-kBK">
@@ -106,7 +106,7 @@
                         <viewLayoutGuide key="safeArea" id="IKy-4G-xPs"/>
                     </view>
                     <navigationItem key="navigationItem" title="ホーム" id="knL-sV-kLW">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="fortuneTelling_gold" id="fJU-Qa-ITk">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="glass" id="fJU-Qa-ITk">
                             <color key="tintColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="tHf-bb-oeV" kind="show" id="Lpb-gZ-mwn"/>
@@ -125,7 +125,7 @@
         <!--ResultVC-->
         <scene sceneID="ViL-v2-2TW">
             <objects>
-                <viewController storyboardIdentifier="Result" id="wYU-LR-B7t" customClass="ResultVC" customModule="NewNumerology" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Result" id="wYU-LR-B7t" customClass="ResultVC" customModule="SP_Numerology" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xfK-5a-FLN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -138,7 +138,7 @@
                                 </constraints>
                                 <color key="separatorColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="40" id="HUK-zR-ynl" customClass="ResultTableViewCell" customModule="NewNumerology" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="40" id="HUK-zR-ynl" customClass="ResultTableViewCell" customModule="SP_Numerology" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="40"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HUK-zR-ynl" id="es3-oB-SkX">
@@ -253,7 +253,7 @@
         <!--Fortune TellingVC-->
         <scene sceneID="K74-Lc-xo0">
             <objects>
-                <viewController storyboardIdentifier="Fortune" id="tHf-bb-oeV" customClass="FortuneTellingVC" customModule="NewNumerology" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Fortune" id="tHf-bb-oeV" customClass="FortuneTellingVC" customModule="SP_Numerology" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="blr-tc-LQP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -357,10 +357,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="fortuneTelling_gold" width="30" height="30"/>
+        <image name="glass" width="30" height="30"/>
         <image name="smallRainbow" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="gSg-zO-VdL"/>
+        <segue reference="MbK-Y3-1Wj"/>
     </inferredMetricsTieBreakers>
 </document>

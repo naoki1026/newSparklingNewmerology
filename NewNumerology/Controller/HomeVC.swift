@@ -126,8 +126,8 @@ extension HomeVC:  UITableViewDelegate, UITableViewDataSource {
       
       if myResult.count < 1 {
         
-        cell.name.text = "左の星をクリックして、\n自分のナンバーを登録してください"
-        cell.rainbowImageView.image = UIImage(named: "fortuneTelling_gold_large")
+        cell.name.text = "左の虫眼鏡をクリックして、\n自分のナンバーを登録してください"
+        cell.rainbowImageView.image = UIImage(named: "glass_small")
         cell.rainbowImageView.alpha = 1
         cell.view.layer.cornerRadius = 25
         cell.name.font = UIFont.systemFont(ofSize: 14)

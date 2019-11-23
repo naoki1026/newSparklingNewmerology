@@ -33,8 +33,8 @@
 		B04677252271AFA200A1897E /* SelectNumberVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04677242271AFA200A1897E /* SelectNumberVC.swift */; };
 		B04677292271C70D00A1897E /* SelectNumberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04677282271C70D00A1897E /* SelectNumberCell.swift */; };
 		B046772B22724A9F00A1897E /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B046772A22724A9F00A1897E /* DetailsVC.swift */; };
-		B046772D2272782600A1897E /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B046772C2272782600A1897E /* Login.storyboard */; };
-		B046772F22727B0F00A1897E /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B046772E22727B0F00A1897E /* LoginVC.swift */; };
+		B046772D2272782600A1897E /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B046772C2272782600A1897E /* Launch.storyboard */; };
+		B046772F22727B0F00A1897E /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B046772E22727B0F00A1897E /* Launch.swift */; };
 		B04677BB2273E32A00A1897E /* NumericalInversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04677BA2273E32A00A1897E /* NumericalInversion.swift */; };
 		B04677BD2273E50600A1897E /* BalanceNum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04677BC2273E50600A1897E /* BalanceNum.swift */; };
 		B04677BF2273E57C00A1897E /* SoulNum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04677BE2273E57C00A1897E /* SoulNum.swift */; };
@@ -79,8 +79,8 @@
 		B04677242271AFA200A1897E /* SelectNumberVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectNumberVC.swift; sourceTree = "<group>"; };
 		B04677282271C70D00A1897E /* SelectNumberCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectNumberCell.swift; sourceTree = "<group>"; };
 		B046772A22724A9F00A1897E /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
-		B046772C2272782600A1897E /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
-		B046772E22727B0F00A1897E /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		B046772C2272782600A1897E /* Launch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
+		B046772E22727B0F00A1897E /* Launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launch.swift; sourceTree = "<group>"; };
 		B04677BA2273E32A00A1897E /* NumericalInversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericalInversion.swift; sourceTree = "<group>"; };
 		B04677BC2273E50600A1897E /* BalanceNum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceNum.swift; sourceTree = "<group>"; };
 		B04677BE2273E57C00A1897E /* SoulNum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoulNum.swift; sourceTree = "<group>"; };
@@ -168,7 +168,7 @@
 		B006F0A1226DE3440016EEFD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				B046772E22727B0F00A1897E /* LoginVC.swift */,
+				B046772E22727B0F00A1897E /* Launch.swift */,
 				B006F098226DDF860016EEFD /* HomeVC.swift */,
 				B006F09A226DDF900016EEFD /* NumerologyVC.swift */,
 				B04677242271AFA200A1897E /* SelectNumberVC.swift */,
@@ -183,7 +183,7 @@
 		B006F0A2226DE34F0016EEFD /* View */ = {
 			isa = PBXGroup;
 			children = (
-				B046772C2272782600A1897E /* Login.storyboard */,
+				B046772C2272782600A1897E /* Launch.storyboard */,
 				B006F090226DDEEC0016EEFD /* Home.storyboard */,
 				B006F092226DDF000016EEFD /* Numerology.storyboard */,
 				B006F096226DDF1C0016EEFD /* Setting.storyboard */,
@@ -295,7 +295,7 @@
 				B006F091226DDEEC0016EEFD /* Home.storyboard in Resources */,
 				B011BCBD228D44E50075FDE3 /* HomeExplanation.xib in Resources */,
 				B006F093226DDF000016EEFD /* Numerology.storyboard in Resources */,
-				B046772D2272782600A1897E /* Login.storyboard in Resources */,
+				B046772D2272782600A1897E /* Launch.storyboard in Resources */,
 				B006F097226DDF1C0016EEFD /* Setting.storyboard in Resources */,
 				B04677CB22740F4800A1897E /* GoogleService-Info.plist in Resources */,
 				B050EDB2227A93FA005C8EE2 /* RomajiViewController.xib in Resources */,
@@ -364,7 +364,7 @@
 				B006F09D226DDF9C0016EEFD /* FortuneTellingVC.swift in Sources */,
 				B046772B22724A9F00A1897E /* DetailsVC.swift in Sources */,
 				B006F0B5226EDAF60016EEFD /* Model.swift in Sources */,
-				B046772F22727B0F00A1897E /* LoginVC.swift in Sources */,
+				B046772F22727B0F00A1897E /* Launch.swift in Sources */,
 				B0B5869A227D2E1600DC03E5 /* SettingVC.swift in Sources */,
 				B00F085322705B1700D1AE54 /* Constants.swift in Sources */,
 				B006F0BB226F0E0C0016EEFD /* HomeCollectionCell.swift in Sources */,
