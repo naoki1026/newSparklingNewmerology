@@ -44,9 +44,7 @@ class HomeVC: UIViewController {
     }
   
   override func viewWillAppear(_ animated: Bool) {
-    
     tableView.reloadData()
-
   }
   
  //MARK: -Helpers
@@ -59,7 +57,6 @@ class HomeVC: UIViewController {
     case 1: results = results.sorted(byKeyPath: "lifepass", ascending: true)
     case 2: results = results.sorted(byKeyPath: "fullName", ascending: true)
     default: return
-    
   }
     
     tableView.reloadData()
@@ -67,66 +64,46 @@ class HomeVC: UIViewController {
   }
   
   func homeExplanation(){
-    
     let vc = HomeExplanation()
-    
-    //どのように画面に遷移するか
     vc.modalTransitionStyle = .crossDissolve
     vc.modalPresentationStyle = .overCurrentContext
     present(vc, animated: true, completion: nil)
-    
   }
-  
 }
 
 extension HomeVC:  UITableViewDelegate, UITableViewDataSource {
-  
   func numberOfSections(in tableView: UITableView) -> Int {
-
     return 2
-
   }
 
   func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-
-    return section == 0 ? "" : "鑑定結果（自分以外)"
-
+    return section == 0 ? "鑑定結果（自分のナンバー）" : "鑑定結果（自分以外のナンバー）"
   }
+    
+func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 20
+    }
 
   func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
-
     view.tintColor = AppColors.naviPurple
-
     let header = view as! UITableViewHeaderFooterView
-
     header.textLabel?.textColor = .white
     header.textLabel?.font = UIFont.systemFont(ofSize: 13)
-
   }
 
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    
-
     if section == 0 {
-
     return 1;
-
     } else {
-
-    return results.count;
-      
+        return results.count == 0 ? 1 : results.count;
     }
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    
     let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! HomeTableViewCell
-    
     if indexPath.section == 0 {
-      
       if myResult.count < 1 {
-        
-        cell.name.text = "ここをクリックして、\n自分のナンバーを登録してください"
+        cell.name.text = "こちらをクリックして、\n自分のナンバーを登録してください。"
         cell.rainbowImageView.image = UIImage(named: "glass_small")
         cell.rainbowImageView.alpha = 1
         cell.view.layer.cornerRadius = 25
@@ -137,7 +114,7 @@ extension HomeVC:  UITableViewDelegate, UITableViewDataSource {
         cell.name.text = myResult[indexPath.row].fullName
         cell.lifepassNumber.text = String(myResult[indexPath.row].lifepass)
         cell.view.layer.cornerRadius = 25
-        cell.name.font = UIFont.systemFont(ofSize: 17)
+        cell.name.font = UIFont.systemFont(ofSize: 14)
         
     switch  myResult[indexPath.row].lifepass {
       
@@ -184,13 +161,27 @@ extension HomeVC:  UITableViewDelegate, UITableViewDataSource {
     }
 
     } else if indexPath.section == 1 {
-      
-      cell.name.text = results[indexPath.row].fullName
-      cell.lifepassNumber.text = String(results[indexPath.row].lifepass)
-      cell.view.layer.cornerRadius = 25
+    
+        
+        if results.count < 1 {
+            cell.name.text = "こちらをクリックして、\n自分のナンバーを登録してください。"
+            cell.name.text = "右上の虫メガネマークをクリックすると、\n自分以外の鑑定ができます。"
+            cell.lifepassNumber.text = ""
+            cell.view.layer.cornerRadius = 25
+            cell.name.font = UIFont.systemFont(ofSize: 14)
+            cell.lifepassNumber.text = ""
+            cell.view.layer.backgroundColor = UIColor.white.cgColor
+            
+        } else {
+            cell.name.text = results[indexPath.row].fullName
+            cell.lifepassNumber.text = String(results[indexPath.row].lifepass)
+            cell.view.layer.cornerRadius = 25
+            cell.name.font = UIFont.systemFont(ofSize: 14)
+            
+        }
+
   
     if (results.count) > 0 {
-      
       switch  results[indexPath.row].lifepass {
         
       case 1: cell.view.layer.backgroundColor = AppColors.red.cgColor
@@ -257,6 +248,8 @@ extension HomeVC:  UITableViewDelegate, UITableViewDataSource {
           self.navigationController?.pushViewController(resultVC, animated: true)
       }
     } else {
+    if results.count > 0 {
+        
     let resultVC : ResultVC = self.storyboard?.instantiateViewController(withIdentifier : "Result") as! ResultVC
     resultVC.resultLifepass = results[indexPath.row].lifepass
     resultVC.resultSoul = results[indexPath.row].soul
@@ -268,13 +261,16 @@ extension HomeVC:  UITableViewDelegate, UITableViewDataSource {
     resultVC.resultBirthday = results[indexPath.row].birthday
     self.navigationController?.pushViewController(resultVC, animated: true)
     }
+        
+        
+    }
   }
   func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
     if editingStyle == .delete {
       
       if indexPath.section == 0 {
         if myResult.count == 0 {
-          ProgressHUD.showError("ナンバーが登録されていないため削除することができません")
+          ProgressHUD.showError("削除することができません")
           return
         } else {
           if let categoryForDeletion = self.myResult?[indexPath.row] {
@@ -288,6 +284,10 @@ extension HomeVC:  UITableViewDelegate, UITableViewDataSource {
           }
         }
       } else {
+      if results.count == 0 {
+        ProgressHUD.showError("削除することができません")
+        return
+      } else {
       if let categoryForDeletion = self.results?[indexPath.row] {
         do {
           try self.realm.write {
@@ -297,6 +297,7 @@ extension HomeVC:  UITableViewDelegate, UITableViewDataSource {
         }
         tableView.reloadData()
        }
+      }
       }
     }
   }
