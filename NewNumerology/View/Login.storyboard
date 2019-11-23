@@ -10,7 +10,7 @@
         <!--LoginVC-->
         <scene sceneID="WVR-1Y-a2e">
             <objects>
-                <viewController storyboardIdentifier="Login" id="Q0q-Eu-oAl" customClass="LoginVC" customModule="NewNumerology" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Login" id="Q0q-Eu-oAl" customClass="LoginVC" customModule="SP_Numerology" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GFN-cP-gRM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -25,21 +25,11 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="人材マネジメント数秘術鑑定士" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTR-8h-OHQ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="数秘術鑑定士 naho監修" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTR-8h-OHQ">
                                 <rect key="frame" x="57" y="387" width="261" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="OVU-T8-kS5"/>
                                     <constraint firstAttribute="width" constant="261" id="fuw-Wg-AW1"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="山名奈保子　監修" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXi-uK-cwt">
-                                <rect key="frame" x="87.5" y="424" width="200" height="23"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="23" id="Kti-PE-TPr"/>
-                                    <constraint firstAttribute="width" constant="200" id="YlQ-ba-Nhm"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -59,13 +49,11 @@
                         <color key="backgroundColor" red="0.55294117649999996" green="0.42352941179999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="E1u-sc-s6o" firstAttribute="centerX" secondItem="GFN-cP-gRM" secondAttribute="centerX" id="7vM-Iu-xzi"/>
+                            <constraint firstItem="c3y-N4-is1" firstAttribute="bottom" secondItem="xTR-8h-OHQ" secondAttribute="bottom" constant="251" id="EeE-05-WFK"/>
                             <constraint firstItem="xTR-8h-OHQ" firstAttribute="centerX" secondItem="GFN-cP-gRM" secondAttribute="centerX" id="Kjy-UD-7yc"/>
-                            <constraint firstItem="cXi-uK-cwt" firstAttribute="top" secondItem="xTR-8h-OHQ" secondAttribute="bottom" constant="8" id="RWJ-GL-uxP"/>
                             <constraint firstItem="E1u-sc-s6o" firstAttribute="top" secondItem="SB3-Ka-9PV" secondAttribute="bottom" constant="5" id="YnW-JC-VKn"/>
                             <constraint firstItem="SB3-Ka-9PV" firstAttribute="centerX" secondItem="GFN-cP-gRM" secondAttribute="centerX" id="ap1-pO-dCH"/>
                             <constraint firstItem="SB3-Ka-9PV" firstAttribute="top" secondItem="c3y-N4-is1" secondAttribute="top" constant="150" id="f1l-cV-TB8"/>
-                            <constraint firstItem="c3y-N4-is1" firstAttribute="bottom" secondItem="cXi-uK-cwt" secondAttribute="bottom" constant="220" id="wJm-RU-scs"/>
-                            <constraint firstItem="cXi-uK-cwt" firstAttribute="centerX" secondItem="GFN-cP-gRM" secondAttribute="centerX" id="x5l-WB-04S"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="c3y-N4-is1"/>
                     </view>

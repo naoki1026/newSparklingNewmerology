@@ -50,7 +50,7 @@
 
 /* Begin PBXFileReference section */
 		1C82B0E0DD7EBFA3B97951DB /* Pods-NewNumerology.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewNumerology.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NewNumerology/Pods-NewNumerology.debug.xcconfig"; sourceTree = "<group>"; };
-		B006F07B226DDECB0016EEFD /* NewNumerology.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewNumerology.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B006F07B226DDECB0016EEFD /* SP Numerology.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SP Numerology.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B006F07E226DDECB0016EEFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B006F08A226DDECB0016EEFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B006F090226DDEEC0016EEFD /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -128,7 +128,7 @@
 		B006F07C226DDECB0016EEFD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B006F07B226DDECB0016EEFD /* NewNumerology.app */,
+				B006F07B226DDECB0016EEFD /* SP Numerology.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -246,7 +246,7 @@
 			);
 			name = NewNumerology;
 			productName = NewNumerology;
-			productReference = B006F07B226DDECB0016EEFD /* NewNumerology.app */;
+			productReference = B006F07B226DDECB0016EEFD /* SP Numerology.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -518,7 +518,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.naokiarakawa.NewNumerology;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "SP Numerology";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -538,7 +538,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.naokiarakawa.NewNumerology;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "SP Numerology";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

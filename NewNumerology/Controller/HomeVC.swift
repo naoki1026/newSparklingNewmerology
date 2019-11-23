@@ -225,43 +225,26 @@ extension HomeVC:  UITableViewDelegate, UITableViewDataSource {
         
       case 22: cell.view.layer.backgroundColor = AppColors.gold.cgColor
       cell.rainbowImageView.alpha = 0
-        
       case 33: cell.rainbowImageView.alpha = 1
-        
       default : cell.layer.backgroundColor = UIColor.white.cgColor
-        
       }
      }
     }
-    
     //セルが選択されても色を変更させない
     cell.selectionStyle = .none
-    
-    
     return cell
-    
   }
-  
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
     return 60
   }
-  
-  
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     tableView.deselectRow(at: indexPath, animated: true)
-
-    
     if indexPath.section == 0 {
         if myResult.count == 0 {
-      
-       let fortuneTellingVC : FortuneTellingVC = self.storyboard?.instantiateViewController(withIdentifier : "Fortune") as! FortuneTellingVC
-      
-      fortuneTellingVC.myNumber = 1
-      
-       self.navigationController?.pushViewController(fortuneTellingVC, animated: true)
-      
+            let fortuneTellingVC : FortuneTellingVC = self.storyboard?.instantiateViewController(withIdentifier : "Fortune") as! FortuneTellingVC
+            fortuneTellingVC.myNumber = 1
+            self.navigationController?.pushViewController(fortuneTellingVC, animated: true)
         } else {
-          
           let resultVC : ResultVC = self.storyboard?.instantiateViewController(withIdentifier : "Result") as! ResultVC
           resultVC.resultLifepass = myResult[indexPath.row].lifepass
           resultVC.resultSoul = myResult[indexPath.row].soul

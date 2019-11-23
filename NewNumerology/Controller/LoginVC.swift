@@ -38,7 +38,7 @@ class LoginVC: UIViewController {
     pastelView.startAnimation()
     view.insertSubview(pastelView, at: 0)
     
-    DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+    DispatchQueue.main.asyncAfter(deadline: .now() + 3.5) {
        DefineTabBar.createTabBar()
         
     }
