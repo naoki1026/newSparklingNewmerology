@@ -64,7 +64,7 @@
                                                         <constraint firstItem="60e-oi-0DB" firstAttribute="top" secondItem="KFP-dy-cuI" secondAttribute="top" id="syh-zo-ULS"/>
                                                     </constraints>
                                                 </view>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ラベル" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lxE-Mx-Syp">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名前" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lxE-Mx-Syp">
                                                     <rect key="frame" x="89" y="10" width="250" height="40"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="0Mf-bC-RYH"/>
@@ -258,68 +258,81 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Tu5-fr-dpC">
-                                <rect key="frame" x="20" y="64" width="335" height="238"/>
-                                <subviews>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="鑑定" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ogl-IO-PmR">
-                                        <rect key="frame" x="0.0" y="0.0" width="335" height="40"/>
-                                        <color key="backgroundColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="gef-8P-LZR"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="生年月日を入力" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5IX-Xt-Nnq">
-                                        <rect key="frame" x="0.0" y="52" width="335" height="40"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="awU-9g-R9d"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="名前を入力（ローマ字）" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jeh-Gu-Kkz">
-                                        <rect key="frame" x="0.0" y="104" width="335" height="40"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="ag0-69-pa4"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wov-M3-9dt">
-                                        <rect key="frame" x="0.0" y="156" width="335" height="30"/>
-                                        <state key="normal" title="ローマ字表記について">
-                                            <color key="titleColor" red="1" green="0.19215686269999999" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="clickedButton:" destination="tHf-bb-oeV" eventType="touchUpInside" id="uad-JX-x9a"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C1r-P2-ejr">
-                                        <rect key="frame" x="0.0" y="198" width="335" height="40"/>
-                                        <color key="backgroundColor" red="0.58431372550000005" green="0.80000000000000004" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="u1A-db-I1U"/>
-                                        </constraints>
-                                        <state key="normal" title="鑑定結果を確認">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="button:" destination="tHf-bb-oeV" eventType="touchUpInside" id="L4L-Vl-YzP"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="鑑定" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ogl-IO-PmR">
+                                <rect key="frame" x="20" y="64" width="335" height="40"/>
+                                <color key="backgroundColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="AzK-jY-B5G"/>
+                                    <constraint firstAttribute="height" constant="40" id="gef-8P-LZR"/>
+                                    <constraint firstAttribute="width" constant="335" id="iTS-DE-M8e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="生年月日を入力" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5IX-Xt-Nnq">
+                                <rect key="frame" x="20" y="184" width="335" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="PeG-DS-rSg"/>
+                                    <constraint firstAttribute="height" constant="40" id="awU-9g-R9d"/>
+                                    <constraint firstAttribute="width" constant="335" id="xMt-43-OlR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="名前を入力（ローマ字）" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jeh-Gu-Kkz">
+                                <rect key="frame" x="20" y="124" width="335" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="335" id="MKm-ia-NJ2"/>
+                                    <constraint firstAttribute="height" constant="40" id="ag0-69-pa4"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="zu7-mr-Gpr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C1r-P2-ejr">
+                                <rect key="frame" x="20" y="294" width="335" height="40"/>
+                                <color key="backgroundColor" red="0.58431372550000005" green="0.80000000000000004" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="muQ-qM-cuM"/>
+                                    <constraint firstAttribute="height" constant="40" id="u1A-db-I1U"/>
+                                    <constraint firstAttribute="width" constant="335" id="wxs-8f-g8C"/>
+                                </constraints>
+                                <state key="normal" title="鑑定結果を確認">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="button:" destination="tHf-bb-oeV" eventType="touchUpInside" id="L4L-Vl-YzP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wov-M3-9dt">
+                                <rect key="frame" x="20" y="244" width="335" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ULU-tO-nWl"/>
+                                    <constraint firstAttribute="width" constant="335" id="xF7-tQ-JsH"/>
+                                </constraints>
+                                <state key="normal" title="ローマ字表記について">
+                                    <color key="titleColor" red="1" green="0.19215686269999999" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickedButton:" destination="tHf-bb-oeV" eventType="touchUpInside" id="uad-JX-x9a"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Tu5-fr-dpC" firstAttribute="centerX" secondItem="blr-tc-LQP" secondAttribute="centerX" id="GQy-rw-ohQ"/>
-                            <constraint firstItem="Tu5-fr-dpC" firstAttribute="leading" secondItem="blr-tc-LQP" secondAttribute="leading" constant="20" id="Hyb-pT-P2c"/>
-                            <constraint firstItem="Tu5-fr-dpC" firstAttribute="top" secondItem="QR3-xR-Rbd" secondAttribute="top" constant="20" id="XdM-4e-HWX"/>
-                            <constraint firstItem="QR3-xR-Rbd" firstAttribute="trailing" secondItem="Tu5-fr-dpC" secondAttribute="trailing" constant="20" id="mxx-MM-VKT"/>
+                            <constraint firstItem="5IX-Xt-Nnq" firstAttribute="top" secondItem="jeh-Gu-Kkz" secondAttribute="bottom" constant="20" id="2jJ-EH-0Vg"/>
+                            <constraint firstItem="C1r-P2-ejr" firstAttribute="top" secondItem="Wov-M3-9dt" secondAttribute="bottom" constant="20" id="5i7-Lj-P7P"/>
+                            <constraint firstItem="Wov-M3-9dt" firstAttribute="centerX" secondItem="blr-tc-LQP" secondAttribute="centerX" id="7Hf-5o-tZE"/>
+                            <constraint firstItem="Wov-M3-9dt" firstAttribute="top" secondItem="5IX-Xt-Nnq" secondAttribute="bottom" constant="20" id="CDW-6Z-f9B"/>
+                            <constraint firstItem="Ogl-IO-PmR" firstAttribute="centerX" secondItem="blr-tc-LQP" secondAttribute="centerX" id="IcT-rw-04V"/>
+                            <constraint firstItem="5IX-Xt-Nnq" firstAttribute="centerX" secondItem="blr-tc-LQP" secondAttribute="centerX" id="TdJ-1l-HCS"/>
+                            <constraint firstItem="C1r-P2-ejr" firstAttribute="centerX" secondItem="blr-tc-LQP" secondAttribute="centerX" id="WHr-ck-MgM"/>
+                            <constraint firstItem="jeh-Gu-Kkz" firstAttribute="top" secondItem="Ogl-IO-PmR" secondAttribute="bottom" constant="20" id="cW9-H6-ymV"/>
+                            <constraint firstItem="jeh-Gu-Kkz" firstAttribute="centerX" secondItem="blr-tc-LQP" secondAttribute="centerX" id="ddG-QF-b5w"/>
+                            <constraint firstItem="Ogl-IO-PmR" firstAttribute="top" secondItem="QR3-xR-Rbd" secondAttribute="top" constant="20" id="vlR-cy-Npm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="QR3-xR-Rbd"/>
                     </view>

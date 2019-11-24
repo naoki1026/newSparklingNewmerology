@@ -10,7 +10,7 @@
         <!--NumerologyVC-->
         <scene sceneID="Fd5-89-D9x">
             <objects>
-                <viewController storyboardIdentifier="Numerology" id="blg-hz-DPe" customClass="NumerologyVC" customModule="NewNumerology" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Numerology" id="blg-hz-DPe" customClass="NumerologyVC" customModule="SP_Numerology" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oyg-4a-zDb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -20,7 +20,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="categoryCell" rowHeight="94" id="buj-Tr-hHb" customClass="CategoryCell" customModule="NewNumerology" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="categoryCell" rowHeight="94" id="buj-Tr-hHb" customClass="CategoryCell" customModule="SP_Numerology" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="94"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="buj-Tr-hHb" id="BR2-Eb-DHj">
@@ -117,7 +117,7 @@
         <!--Select NumberVC-->
         <scene sceneID="P7H-II-5VJ">
             <objects>
-                <viewController storyboardIdentifier="Select" id="3nj-u6-Cra" customClass="SelectNumberVC" customModule="NewNumerology" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Select" id="3nj-u6-Cra" customClass="SelectNumberVC" customModule="SP_Numerology" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="V1J-2v-JX0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -132,7 +132,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NumberCell" id="kNw-dW-lzW" customClass="SelectNumberCell" customModule="NewNumerology" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NumberCell" id="kNw-dW-lzW" customClass="SelectNumberCell" customModule="SP_Numerology" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="146" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -188,7 +188,7 @@
         <!--DetailsVC-->
         <scene sceneID="TIv-YA-5rr">
             <objects>
-                <viewController storyboardIdentifier="Details" id="qYi-Og-C2a" customClass="DetailsVC" customModule="NewNumerology" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Details" id="qYi-Og-C2a" customClass="DetailsVC" customModule="SP_Numerology" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VuI-lE-nnC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
