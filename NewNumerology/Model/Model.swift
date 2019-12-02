@@ -13,6 +13,7 @@ class FortuneTellingResult : Object {
   
   @objc dynamic var uuid : String = ""
   @objc dynamic var fullName : String = ""
+  @objc dynamic var fullNameJp : String = ""
   @objc dynamic var birthday : String = ""
   @objc dynamic var myNumber : Int = 0
   @objc dynamic var lifepass : Int  = 0
@@ -29,6 +30,7 @@ class MyFortuneTellingResult : Object {
   
   @objc dynamic var uuid : String = ""
   @objc dynamic var fullName : String = ""
+  @objc dynamic var fullNameJp : String = ""
   @objc dynamic var birthday : String = ""
   @objc dynamic var myNumber : Int = 0
   @objc dynamic var lifepass : Int  = 0

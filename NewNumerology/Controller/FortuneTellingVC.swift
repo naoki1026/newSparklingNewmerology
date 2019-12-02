@@ -17,6 +17,8 @@ class FortuneTellingVC: UIViewController, UITextFieldDelegate {
   @IBOutlet var fullName: UITextField!
   @IBOutlet weak var nextButton: UIButton!
   @IBOutlet weak var headder: UILabel!
+  @IBOutlet weak var fullNameJp: UITextField!
+    
   
   let realm = try! Realm()
   var results : Results<FortuneTellingResult>!
@@ -31,17 +33,16 @@ class FortuneTellingVC: UIViewController, UITextFieldDelegate {
   var year : String  = ""
   var month : String = ""
   var day: String = ""
-  var fullNameText = ""
+  var fullNameText: String = ""
+  var fullNameJpText: String = ""
+    
   
   // 日付のフォーマット
   let formatter = DateFormatter()
   let formatterYear = DateFormatter()
   let formatterMonth = DateFormatter()
   let formatterDay = DateFormatter()
-  
-//  private var users = [User]()
-//  private var user : User!
-//  
+
   //画面が読み込まれた瞬間に呼び出される
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -81,7 +82,7 @@ class FortuneTellingVC: UIViewController, UITextFieldDelegate {
     //dateField.delegate = self
     fullName.delegate = self
     
-    //"yyyy年MM月dd日"を"yyyy/MM/dd"したりして出力の仕方を好きに変更できるよ
+   //"yyyy年MM月dd日"を"yyyy/MM/dd"したりして出力の仕方を好きに変更できるよ
     formatter.dateFormat = "yyyy年MM月dd日"
     formatterYear.dateFormat = "yyyy"
     
@@ -102,6 +103,7 @@ class FortuneTellingVC: UIViewController, UITextFieldDelegate {
   
   @IBAction func button(_ sender: Any) {
      fullNameText = fullName.text!
+//     fullNameJpText = fullNameJp.text!
      year = String(formatterYear.string(from: datePicker.date))
      month = String(formatterMonth.string(from: datePicker.date))
      day = String(formatterDay.string(from: datePicker.date))
@@ -115,9 +117,17 @@ class FortuneTellingVC: UIViewController, UITextFieldDelegate {
     let balanceNumber = BalanceNum.calcBalance(year: year, month: month, day: day)
     let result = FortuneTellingResult()
     
+    if fullNameJp.text! == "" {
+        fullNameJpText = "NULL"
+    } else {
+        fullNameJpText = fullNameJp.text!
+    }
+
+    
     result.myNumber = myNumber == 1 ? 1 : 0
     result.uuid = NSUUID().uuidString
     result.fullName = fullName.text!
+    result.fullNameJp = fullNameJpText
     result.birthday = dateField.text!
     result.lifepass = lifepassNumber
     result.soul = soulNumber
@@ -142,7 +152,8 @@ class FortuneTellingVC: UIViewController, UITextFieldDelegate {
     resultViewController.resultDestiny = destinyNumber
     resultViewController.resultPersonal = personalNumber
     resultViewController.resultBalance = balanceNumber
-    resultViewController.resultName = fullNameText
+    resultViewController.resultNameEn = fullNameText
+    resultViewController.resultNameJp = fullNameJpText
     resultViewController.resultBirthday = dateField.text!
     resultViewController.myNumber = myNumber
     self.navigationController?.pushViewController(resultViewController, animated: true)

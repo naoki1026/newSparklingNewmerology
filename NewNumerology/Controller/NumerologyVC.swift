@@ -61,8 +61,8 @@ class NumerologyVC: UIViewController, UITableViewDelegate, UITableViewDataSource
     
     switch indexPath.row {
       
-    case 0: selectedCategory = "ライフパスナンバー"
-    case 1: selectedCategory = "ディスティニーナンバー"
+    case 0: selectedCategory = "エッセンシャルナンバー"
+    case 1: selectedCategory = "ミッションナンバー"
     case 2: selectedCategory = "ソウルナンバー"
     case 3: selectedCategory = "パーソナルナンバー"
     default: selectedCategory = "なし"

@@ -22,7 +22,7 @@ class SelectNumberVC: UIViewController, UICollectionViewDelegate, UICollectionVi
   
     override func viewDidLoad() {
         super.viewDidLoad()
-      
+        
       details = data.getDetails(forCategoryTitle: selectedCategory)
       
       collectionView.delegate = self

@@ -21,6 +21,8 @@ class ResultVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UI
   var resultPersonal = 0
   var resultBalance = 0
   var resultMyNumber  = 0
+  var resultNameEn = ""
+  var resultNameJp = ""
   var resultName = ""
   var resultColor = ""
   var resultBirthday = ""
@@ -52,6 +54,14 @@ class ResultVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UI
     self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : AppColors.naviPurple]
     imageColor()
     tableView.tableFooterView = UIView(frame: .zero)
+    
+    if resultNameJp == "NULL" {
+        resultName = resultNameEn
+    } else {
+        resultName = resultNameJp
+    }
+    
+    
   }
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -69,32 +79,36 @@ class ResultVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UI
     case 0:
       cell.title.text = "名前"
       cell.content.text = resultName
-      
+        
     case 1:
+      cell.title.text = "ローマ字"
+      cell.content.text = resultNameEn
+      
+    case 2:
       cell.title.text = "生年月日"
       cell.content.text = resultBirthday
       
-    case 2:
-      cell.title.text = "ライフパスナンバー"
+    case 3:
+      cell.title.text = "エッセンシャルナンバー"
       cell.content.text = String(resultLifepass)
       cell.accessoryType = UITableViewCell.AccessoryType.disclosureIndicator
       
-    case 3:
-      cell.title.text = "ディスティニーナンバー"
+    case 4:
+      cell.title.text = "ミッションナンバー"
       cell.content.text = String(resultDestiny)
       cell.accessoryType = UITableViewCell.AccessoryType.disclosureIndicator
       
-    case 4:
+    case 5:
       cell.title.text = "ソウルナンバー"
       cell.content.text = String(resultSoul)
       cell.accessoryType = UITableViewCell.AccessoryType.disclosureIndicator
       
-    case 5:
+    case 6:
       cell.title.text = "パーソナルナンバー"
       cell.content.text = String(resultPersonal)
       cell.accessoryType = UITableViewCell.AccessoryType.disclosureIndicator
       
-    case 6:
+    case 7:
       cell.title.text = "イメージカラー"
       cell.content.text = String(resultColor)
       
@@ -211,29 +225,29 @@ class ResultVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UI
     
   
     
-    if indexPath.row == 2 {
+    if indexPath.row == 3 {
       
       let number = changeNumber(number: resultLifepass)
       categoryToPass = data.lifepass[number]
-      navigationTitle = "ライフパスナンバー"
+      navigationTitle = "エッセンシャルナンバー"
       nextPage()
       
-    } else if indexPath.row == 3 {
+    } else if indexPath.row == 4 {
       
       let number = changeNumber(number: resultDestiny)
      categoryToPass = data.destiny[number]
-       navigationTitle = "ディスティニーナンバー"
+       navigationTitle = "ミッションナンバー"
       nextPage()
     
       
-    } else if indexPath.row == 4 {
+    } else if indexPath.row == 5 {
       
       let number = changeNumber(number: resultSoul)
     categoryToPass = data.soul[number]
        navigationTitle = "ソウルナンバー"
       nextPage()
       
-    } else if indexPath.row == 5 {
+    } else if indexPath.row == 6 {
       
       let number = changeNumber(number: resultPersonal)
     categoryToPass = data.personal[number]

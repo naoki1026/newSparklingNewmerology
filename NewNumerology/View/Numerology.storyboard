@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yuD-XM-haV">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -34,7 +35,7 @@
                                                         <constraint firstAttribute="height" constant="18" id="xHH-sg-zzC"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="私たちの潜在能力や才能、特技や自分にとって当たり前の考え方を表すナンバーです。" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jdz-Xc-BsT">
@@ -65,10 +66,10 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3aD-Qj-ULd">
                                 <rect key="frame" x="20" y="54" width="335" height="160"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Numerology（数秘術について）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0aG-Ge-uWg">
-                                        <rect key="frame" x="8" y="8" width="227.5" height="18"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="数秘術について" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0aG-Ge-uWg">
+                                        <rect key="frame" x="8" y="8" width="107.5" height="18"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="数秘術は数は「量」だけではなく、「性質」も表すという前提に基づいた占いです。生年月日と名前をもとに導き出されたナンバーによって、自分の本質を理解することができます。 以下で４つのナンバーの詳細を確認することができます。" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cya-7N-B7s">
@@ -199,13 +200,6 @@
                                     <constraint firstAttribute="height" constant="235" id="pPx-H7-z3B"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pxi-OO-Kns">
-                                <rect key="frame" x="53" y="110" width="268" height="143"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="170"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ia-PX-R9V">
                                 <rect key="frame" x="16" y="316" width="343" height="20.5"/>
                                 <constraints>
@@ -224,6 +218,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pxi-OO-Kns">
+                                <rect key="frame" x="53.5" y="84" width="268" height="143"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="268" id="Ica-mj-05W"/>
+                                    <constraint firstAttribute="height" constant="143" id="bfR-B9-oSe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="170"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -231,8 +235,10 @@
                             <constraint firstItem="lf0-2T-pJG" firstAttribute="centerX" secondItem="VuI-lE-nnC" secondAttribute="centerX" id="B7a-hy-DpX"/>
                             <constraint firstItem="v3g-Wm-XvK" firstAttribute="leading" secondItem="P99-wA-9e2" secondAttribute="leading" id="Cm0-5B-9gt"/>
                             <constraint firstItem="v3g-Wm-XvK" firstAttribute="top" secondItem="P99-wA-9e2" secondAttribute="top" id="H5I-cw-aN5"/>
+                            <constraint firstItem="Pxi-OO-Kns" firstAttribute="centerX" secondItem="VuI-lE-nnC" secondAttribute="centerX" id="ZGa-ip-YlL"/>
                             <constraint firstItem="lf0-2T-pJG" firstAttribute="top" secondItem="1ia-PX-R9V" secondAttribute="bottom" constant="25" id="aBW-r8-tnw"/>
                             <constraint firstItem="v3g-Wm-XvK" firstAttribute="trailing" secondItem="P99-wA-9e2" secondAttribute="trailing" id="ahj-U2-LgE"/>
+                            <constraint firstItem="Pxi-OO-Kns" firstAttribute="top" secondItem="P99-wA-9e2" secondAttribute="top" constant="40" id="b1C-sc-mZl"/>
                             <constraint firstItem="1ia-PX-R9V" firstAttribute="top" secondItem="v3g-Wm-XvK" secondAttribute="bottom" constant="37" id="h4v-Wf-Fv6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="P99-wA-9e2"/>

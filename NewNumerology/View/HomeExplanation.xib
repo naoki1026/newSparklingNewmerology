@@ -22,35 +22,16 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0YH-xc-waq">
                     <rect key="frame" x="12.5" y="200" width="350" height="267"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="アプリをダウンロードしていただき、ありがとうございます！" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFX-xh-eTR">
-                            <rect key="frame" x="8" y="20" width="334" height="58"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="334" id="7dL-Pz-mo1"/>
-                                <constraint firstAttribute="height" constant="58" id="wLK-c5-vmY"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <color key="textColor" red="0.59999999999999998" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="①左の虫眼鏡マークをクリックすると、自分のナンバーを確認することができます！  ②右上の虫眼鏡マークをクリックして、友達や家族のナンバーを確認してみてください！" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="92F-f2-e4X">
-                            <rect key="frame" x="16.5" y="64" width="317" height="166"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="317" id="Cgv-JK-B7N"/>
-                                <constraint firstAttribute="height" constant="166" id="ZUY-vL-gH4"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xsE-3M-WQW">
-                            <rect key="frame" x="99" y="207" width="152" height="52"/>
+                            <rect key="frame" x="95" y="193" width="160" height="52"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="152" id="8L7-Nh-Tif"/>
+                                <constraint firstAttribute="width" constant="160" id="8L7-Nh-Tif"/>
                                 <constraint firstAttribute="height" constant="52" id="HgK-iP-1fC"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                             <state key="normal" title="閉じる">
-                                <color key="titleColor" red="0.59999999999999998" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <connections>
                                 <action selector="tappedCloseButton:" destination="-1" eventType="touchUpInside" id="NAK-Mx-GSK"/>
@@ -60,20 +41,29 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="350" id="6fM-ug-KEf"/>
-                        <constraint firstItem="TFX-xh-eTR" firstAttribute="centerX" secondItem="0YH-xc-waq" secondAttribute="centerX" id="J5q-kY-Ig8"/>
                         <constraint firstItem="xsE-3M-WQW" firstAttribute="centerX" secondItem="0YH-xc-waq" secondAttribute="centerX" id="Mjb-hH-F9Z"/>
                         <constraint firstAttribute="height" constant="267" id="WeZ-jZ-Ipx"/>
-                        <constraint firstItem="xsE-3M-WQW" firstAttribute="top" secondItem="TFX-xh-eTR" secondAttribute="bottom" constant="129" id="ffl-XU-7SN"/>
-                        <constraint firstItem="TFX-xh-eTR" firstAttribute="top" secondItem="0YH-xc-waq" secondAttribute="top" constant="20" id="fvE-Hh-cRH"/>
-                        <constraint firstItem="92F-f2-e4X" firstAttribute="centerX" secondItem="0YH-xc-waq" secondAttribute="centerX" id="poL-kG-B80"/>
-                        <constraint firstItem="92F-f2-e4X" firstAttribute="top" secondItem="0YH-xc-waq" secondAttribute="top" constant="64" id="qMx-fw-pby"/>
+                        <constraint firstItem="xsE-3M-WQW" firstAttribute="top" secondItem="0YH-xc-waq" secondAttribute="top" constant="193" id="sth-PS-r7F"/>
                     </constraints>
                 </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFX-xh-eTR">
+                    <rect key="frame" x="27.5" y="220" width="320" height="140"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="140" id="Ho3-ah-N54"/>
+                        <constraint firstAttribute="width" constant="320" id="jpd-2P-yIX"/>
+                    </constraints>
+                    <string key="text">アプリをダウンロードしていただき、ありがとうございます！このアプリでは、生年月日と名前をもとに導き出されたナンバーによって、自分の本質を理解することができます。</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.65000000000000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="0YH-xc-waq" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0sP-Zl-hRk"/>
                 <constraint firstItem="0YH-xc-waq" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="eJu-Ho-14U"/>
+                <constraint firstItem="TFX-xh-eTR" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="220" id="f0X-4l-EqC"/>
+                <constraint firstItem="TFX-xh-eTR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vDG-vc-xNx"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="138.40000000000001" y="120.98950524737631"/>

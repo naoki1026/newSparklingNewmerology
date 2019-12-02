@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Q0q-Eu-oAl">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,21 +12,20 @@
             <objects>
                 <viewController storyboardIdentifier="Login" id="Q0q-Eu-oAl" customClass="Launch" customModule="SP_Numerology" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GFN-cP-gRM">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Numerology" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E1u-sc-s6o">
-                                <rect key="frame" x="62" y="211" width="251.5" height="55.5"/>
+                                <rect key="frame" x="81.5" y="255" width="251.5" height="55.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55.5" id="Z1W-4s-Mlb"/>
-                                    <constraint firstAttribute="width" constant="251.5" id="of7-sp-zCH"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="42"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="数秘術鑑定士 naho監修" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTR-8h-OHQ">
-                                <rect key="frame" x="57" y="387" width="261" height="29"/>
+                                <rect key="frame" x="76.5" y="431" width="261" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="9uN-Le-8yd"/>
                                     <constraint firstAttribute="width" constant="261" id="q5j-xt-A3Z"/>
@@ -36,10 +35,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sparkling" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SB3-Ka-9PV">
-                                <rect key="frame" x="92" y="150" width="191" height="56"/>
+                                <rect key="frame" x="111.5" y="194" width="191" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="EYi-oZ-Cq3"/>
-                                    <constraint firstAttribute="width" constant="191" id="Ecc-v6-qnr"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="42"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

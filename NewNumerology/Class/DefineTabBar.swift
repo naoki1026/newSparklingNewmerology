@@ -31,10 +31,10 @@ class DefineTabBar : NSObject {
     //配列の中に、タプルで複数の型の値をまとめている
     let vcData : [(UIViewController, UIImage, UIImage)] = [
       
-      (homeVC, UIImage(named: "house_white")!, UIImage(named: "house_gold")!),
-      (numerologyVC, UIImage(named: "numerology_white")!, UIImage(named: "numerology_gold")!),
+      (homeVC, UIImage(named: "house_white")!, UIImage(named: "house_purple")!),
+      (numerologyVC, UIImage(named: "numerology_white")!, UIImage(named: "numerology_purple")!),
 //      (messageMainVC, UIImage(named: "comment_white")!, UIImage(named: "comment_gold")!),
-      (settingVC, UIImage(named: "setting_white")!, UIImage(named: "setting_gold")!)
+      (settingVC, UIImage(named: "setting_white")!, UIImage(named: "setting_purple")!)
       
     ]
     

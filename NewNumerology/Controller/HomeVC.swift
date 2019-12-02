@@ -26,9 +26,10 @@ class HomeVC: UIViewController {
   override func viewDidLoad() {
         super.viewDidLoad()
     
-        tableView.delegate = self
-        tableView.dataSource = self
-    
+    let realm = try! Realm()
+    print(Realm.Configuration.defaultConfiguration.fileURL!)
+    tableView.delegate = self
+    tableView.dataSource = self
     let userDefault = UserDefaults.standard
     let dict = ["firstLaunch": true]
     userDefault.register(defaults: dict)
@@ -41,6 +42,7 @@ class HomeVC: UIViewController {
         results = realm.objects(FortuneTellingResult.self).filter("myNumber == 0")
         results = results.sorted(byKeyPath: "lastUpdate", ascending: false)
         self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: AppColors.naviPurple]
+    
     }
   
   override func viewWillAppear(_ animated: Bool) {
@@ -52,7 +54,6 @@ class HomeVC: UIViewController {
   @IBAction func selectedTab(_ sender: UISegmentedControl) {
     
     switch sender.selectedSegmentIndex {
-      
     case 0: results = results.sorted(byKeyPath: "lastUpdate", ascending: false)
     case 1: results = results.sorted(byKeyPath: "lifepass", ascending: true)
     case 2: results = results.sorted(byKeyPath: "fullName", ascending: true)
@@ -77,7 +78,7 @@ extension HomeVC:  UITableViewDelegate, UITableViewDataSource {
   }
 
   func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-    return section == 0 ? "鑑定結果（自分のナンバー）" : "鑑定結果（自分以外のナンバー）"
+    return section == 0 ? "鑑定結果（自分）" : "鑑定結果（その他）"
   }
     
 func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -111,7 +112,14 @@ func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) 
         cell.lifepassNumber.text = ""
         cell.view.layer.backgroundColor = UIColor.white.cgColor
       } else {
-        cell.name.text = myResult[indexPath.row].fullName
+        
+        if myResult[indexPath.row].fullNameJp == "NULL" {
+            cell.name.text = myResult[indexPath.row].fullName
+        } else {
+            cell.name.text = myResult[indexPath.row].fullNameJp
+        }
+        
+        
         cell.lifepassNumber.text = String(myResult[indexPath.row].lifepass)
         cell.view.layer.cornerRadius = 25
         cell.name.font = UIFont.systemFont(ofSize: 14)
@@ -173,7 +181,14 @@ func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) 
             cell.view.layer.backgroundColor = UIColor.white.cgColor
             
         } else {
-            cell.name.text = results[indexPath.row].fullName
+            
+            
+            if results[indexPath.row].fullNameJp == "NULL" {
+                cell.name.text = results[indexPath.row].fullName
+            } else {
+                cell.name.text = results[indexPath.row].fullNameJp
+            }
+            
             cell.lifepassNumber.text = String(results[indexPath.row].lifepass)
             cell.view.layer.cornerRadius = 25
             cell.name.font = UIFont.systemFont(ofSize: 14)
@@ -243,7 +258,8 @@ func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) 
           resultVC.resultDestiny = myResult[indexPath.row].destiny
           resultVC.resultPersonal = myResult[indexPath.row].personal
           resultVC.resultBalance = myResult[indexPath.row].balance
-          resultVC.resultName = myResult[indexPath.row].fullName
+          resultVC.resultNameEn = myResult[indexPath.row].fullName
+          resultVC.resultNameJp = myResult[indexPath.row].fullNameJp
           resultVC.resultBirthday = myResult[indexPath.row].birthday
           self.navigationController?.pushViewController(resultVC, animated: true)
       }
@@ -257,7 +273,8 @@ func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) 
     resultVC.resultDestiny = results[indexPath.row].destiny
     resultVC.resultPersonal = results[indexPath.row].personal
     resultVC.resultBalance = results[indexPath.row].balance
-    resultVC.resultName = results[indexPath.row].fullName
+    resultVC.resultNameEn = results[indexPath.row].fullName
+    resultVC.resultNameJp = results[indexPath.row].fullNameJp
     resultVC.resultBirthday = results[indexPath.row].birthday
     self.navigationController?.pushViewController(resultVC, animated: true)
     }

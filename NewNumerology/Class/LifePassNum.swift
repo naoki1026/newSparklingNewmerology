@@ -10,7 +10,7 @@ import UIKit
 
 class LifePassNum : NSObject  {
   
-  //ライフパスナンバーを算出する
+  //エッセンシャルナンバーナンバーを算出する
   static func calcLifePass(year : String, month: String, day: String) -> Int {
     
     //年の指定した番号の文字列を抽出して、数値型にキャスト
@@ -32,7 +32,7 @@ class LifePassNum : NSObject  {
     let secondDay = Int(day.suffix(1))!
     let sumDay = firstDay + secondDay
     
-    //ライフパスナンバーを算出
+    //エッセンシャルナンバーナンバーを算出
     let lifePassNumber = String(sumYear + sumMonth + sumDay)
     let firstLPN = Int(lifePassNumber.prefix(1))!
     let secondLPN = Int(lifePassNumber.suffix(1))!
@@ -43,7 +43,7 @@ class LifePassNum : NSObject  {
     //年月日を合算した数字
     let birthday = sumYear + sumMonth + sumDay
     
-    //年月日を合算した数字からライフパスナンバーを算出
+    //年月日を合算した数字からエッセンシャルナンバーを算出
     switch birthday {
       
     case 10 : resultLifePassNumber = 1
